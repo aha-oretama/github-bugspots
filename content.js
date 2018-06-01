@@ -22,3 +22,4 @@ button.addEventListener('click', function (event) {
 
 div.appendChild(button);
 commitBar.appendChild(div);
+

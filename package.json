@@ -1,0 +1,15 @@
+{
+  "name": "github-bugspots",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/aha-oretama/github-bugspots.git",
+  "author": "aha-oretama",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^15.8.0",
+    "co": "^4.6.0",
+    "js-git": "^0.7.8",
+    "js-github": "^1.1.0",
+    "lodash": "^4.17.10"
+  }
+}
