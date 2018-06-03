@@ -28,8 +28,7 @@
       "matches": ["https://github.com/*/*"],
       "css": ["content.css"],
       "js": [
-        "content.js",
-        "bugspots.js"
+        "content.bundle.js"
       ]
     }
   ],

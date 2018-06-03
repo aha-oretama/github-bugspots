@@ -4,13 +4,13 @@
  */
 "use strict";
 
-const _ = require('lodash');
-const addBaseFuncToRepo = require('js-github/mixins/github-db');
-const addWalkerToRepo = require('js-git/mixins/walkers');
-const co = require('co'); // co is more popular than gen-run.
-const Octokit = require('@octokit/rest');
+import _ from 'lodash';
+import addBaseFuncToRepo from 'js-github/mixins/github-db';
+import addWalkerToRepo from 'js-git/mixins/walkers';
+import co from 'co'; // co is more popular than gen-run.
+import Octokit from '@octokit/rest';
 
-class BugSpots {
+export default class BugSpots {
   constructor(owner, repoName, token) {
     this.owner = owner;
     this.repoName = repoName;
@@ -82,3 +82,10 @@ class BugSpots {
     });
   }
 }
+
+new BugSpots('aha-oretama', "TypoFixer", '98f5e32772d42332dce722f0ea3b39f2e5c117e0').analyze('*','master')
+    .then(value => {
+        console.log(value.fixes);
+        console.log(value.spots);
+    });
+
