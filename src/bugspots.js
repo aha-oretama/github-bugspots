@@ -82,10 +82,3 @@ export default class BugSpots {
     });
   }
 }
-
-new BugSpots('aha-oretama', "TypoFixer", '98f5e32772d42332dce722f0ea3b39f2e5c117e0').analyze('*','master')
-    .then(value => {
-        console.log(value.fixes);
-        console.log(value.spots);
-    });
-
