@@ -8,7 +8,7 @@ const commitBar = document.getElementsByClassName('commit-tease')[0];
 
 let div = document.createElement('div');
 div.className = 'github-bugspots-controller';
-button = document.createElement('button');
+let button = document.createElement('button');
 button.className = 'btn btn-sm notDisplayed';
 button.innerHTML = 'bugspots';
 button.addEventListener('click', function (event) {
