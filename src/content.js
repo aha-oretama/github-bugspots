@@ -12,19 +12,22 @@ let button = document.createElement('button');
 button.className = 'btn btn-sm notDisplayed';
 button.innerHTML = 'bugspots';
 button.addEventListener('click', function (event) {
-    let button = event.target;
-    if(button.classList.contains('notDisplayed')) {
-        button.classList.remove('notDisplayed');
-        button.classList.add('displayed');
-        new Bugspots('aha-oretama', "TypoFixer", '98f5e32772d42332dce722f0ea3b39f2e5c117e0').analyze('*','master')
-            .then(value => {
-                console.log(value.fixes);
-                console.log(value.spots);
-            })
-    }else {
-        button.classList.remove('displayed');
-        button.classList.add('notDisplayed')
-    }
+  let button = event.target;
+  if (button.classList.contains('notDisplayed')) {
+    button.classList.remove('notDisplayed');
+    button.classList.add('displayed');
+    chrome.storage.sync.get('token', function (data) {
+      new Bugspots('aha-oretama', "TypoFixer", data.token).analyze('*', 'master')
+        .then(value => {
+          console.log(value.fixes);
+          console.log(value.spots);
+        })
+    });
+    
+  } else {
+    button.classList.remove('displayed');
+    button.classList.add('notDisplayed')
+  }
 });
 
 div.appendChild(button);

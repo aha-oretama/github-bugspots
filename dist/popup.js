@@ -2,19 +2,16 @@
  * @author aha-oretama
  * @Date 2018/05/26.
  */
-let changeColor = document.getElementById('changeColor');
+const token = document.getElementById('token');
+const saveToken = document.getElementById('saveToken');
 
-chrome.storage.sync.get('color', function (data) {
-    changeColor.style.backgroundColor = data.color;
-    changeColor.setAttribute('value', data.color);
+chrome.storage.sync.get('token', function (data) {
+  token.innerHTML = data.token;
 });
 
-changeColor.onclick = function (element) {
-    let color = element.target.value;
-    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-        chrome.tabs.executeScript(
-            tabs[0].id,
-            {code: 'document.body.style.backgroundColor = "' + color + '";'}
-        );
-    });
+saveToken.onclick = function (element) {
+  const tokenStr = token.innerHTML;
+  chrome.storage.sync.set({token: tokenStr}, function () {
+    console.log('token: ' + tokenStr);
+  });
 };
