@@ -10,8 +10,9 @@ chrome.storage.sync.get('token', function (data) {
 });
 
 saveToken.onclick = function (element) {
-  const tokenStr = token.innerHTML;
+  const tokenStr = token.value;
   chrome.storage.sync.set({token: tokenStr}, function () {
     console.log('token: ' + tokenStr);
   });
+  window.close();
 };
