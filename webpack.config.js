@@ -16,8 +16,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([{
-      from: 'src/origin/*',
-      flatten: true
+      from: 'src/origin'
     }])
   ],
   devtool: 'inline-source-map'
