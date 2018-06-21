@@ -18,13 +18,21 @@ button.addEventListener('click', function (event) {
     button.classList.add('displayed');
     chrome.storage.sync.get('token', function (data) {
       new Bugspots('aha-oretama', "TypoFixer", data.token).analyze('*', 'master')
-        .then(value => {
-          console.log(value.fixes);
-          console.log(value.spots);
+        .then(data => {
+          const spots = data.spots;
+          let parentSpan = document.querySelector(`a[title="${spots.file}"]`) // href tag in which file exists
+              .closest('tr.js-navigation-item') // tr in which file exists
+              .querySelector('td.age span'); // age's td which is same row at above file and to be replaced
+          let score = document.createElement('a');
+          score.className = 'score';
+          score.innerHTML(`${spots.score}`);
+          parentSpan.appendChild(score);
         })
     });
-    
   } else {
+    let score = document.querySelector('a.score');
+    score.remove();
+
     button.classList.remove('displayed');
     button.classList.add('notDisplayed')
   }

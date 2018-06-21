@@ -40,6 +40,7 @@ export default class BugSpots {
       let logStream = yield localRepo.logWalk(commitHash);
 
       let commit;
+      // TODO: logStream.read(), localOctokit.repos.getCommit()を使用する度にGitHub APIの制限数に引っかかる可能性がある。そのハンドリングを実装すべき
       while (commit = yield logStream.read(), commit !== undefined) {
         console.info(commit);
         // if (regex.test(commit.message)) {
