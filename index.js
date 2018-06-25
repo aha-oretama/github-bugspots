@@ -38,7 +38,7 @@ class Bugspots {
       
       while (commit = yield logStream.read() , commit !== undefined && depth > 0) {
         depth--;
-        console.debug(commit);
+        log(commit);
         if (regex.test(commit.message)) {
           const detail = yield localOctokit.repos.getCommit({
             owner: localOwner,
@@ -46,7 +46,7 @@ class Bugspots {
             sha: commit.hash
           });
   
-          console.debug(detail);
+          log(detail);
   
           fixes.push({
             message: commit.message.split('\n')[0],
@@ -78,6 +78,13 @@ class Bugspots {
         spots: spots
       })
     });
+  }
+}
+
+const debug = process.env.NODE_DEBUG && /\bgithub-bugspots\b/.test(process.env.NODE_DEBUG);
+function log(text) {
+  if(debug) {
+    console.log(text);
   }
 }
 
