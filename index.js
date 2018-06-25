@@ -1,18 +1,18 @@
 "use strict";
 
-import _ from 'lodash';
-import addBaseFuncToRepo from 'js-github/mixins/github-db';
-import addWalkerToRepo from 'js-git/mixins/walkers';
-import co from 'co'; // co is more popular than gen-run.
-import Octokit from '@octokit/rest';
+const _ = require('lodash');
+const addBaseFuncToRepo = require('js-github/mixins/github-db');
+const addWalkerToRepo = require('js-git/mixins/walkers');
+const co = require('co'); // co is more popular than gen-run.
+const Octokit = require('@octokit/rest');
 
-export default class Bugspots {
-  constructor(owner, repoName, token) {
-    this.owner = owner;
+class Bugspots {
+  constructor(oganization, repoName, token) {
+    this.organization = oganization;
     this.repoName = repoName;
     this.repo = {};
     // Add functions to repo in this method.
-    addBaseFuncToRepo(this.repo, `${owner}/${repoName}`, token);
+    addBaseFuncToRepo(this.repo, `${oganization}/${repoName}`, token);
     addWalkerToRepo(this.repo);
     // Set up Octokit.
     this.octokit = Octokit();
@@ -23,37 +23,37 @@ export default class Bugspots {
   }
 
   // デフォルトは正規表現にワード境界を使用。
-  analyze(regex = /\b(fix(es|ed)?|close(s|d)?)\b/i, branch = 'master', depth = 10000) {
+  analyze(branch = 'master', depth = 1000, regex = /\b(fix(es|ed)?|close(s|d)?)\b/i) {
 
     let fixes = [];
 
-    const localRepo = this.repo, localOwner = this.owner, localRepoName = this.repoName,
+    const localRepo = this.repo, localOwner = this.organization, localRepoName = this.repoName,
       localOctokit = this.octokit; // For using parameters in generator function.
 
     return co(function* () {
       const commitHash = yield localRepo.readRef(`refs/heads/${branch}`);
       let logStream = yield localRepo.logWalk(commitHash);
-
       let commit;
       // TODO: logStream.read(), localOctokit.repos.getCommit()を使用する度にGitHub APIの制限数に引っかかる可能性がある。そのハンドリングを実装すべき
       
-      while (commit = yield logStream.read() && commit !== undefined && depth > 0) {
+      while (commit = yield logStream.read() , commit !== undefined && depth > 0) {
         depth--;
-        console.info(commit);
-        // if (regex.test(commit.message)) {
-        const detail = yield localOctokit.repos.getCommit({
-          owner: localOwner,
-          repo: localRepoName,
-          sha: commit.hash
-        });
-
-        console.info(detail);
-
-        fixes.push({
-          message: commit.message.split('\n')[0],
-          date: commit.committer.date.seconds,
-          files: detail.data.files.map(file => file.filename)
-        });
+        console.debug(commit);
+        if (regex.test(commit.message)) {
+          const detail = yield localOctokit.repos.getCommit({
+            owner: localOwner,
+            repo: localRepoName,
+            sha: commit.hash
+          });
+  
+          console.debug(detail);
+  
+          fixes.push({
+            message: commit.message.split('\n')[0],
+            date: commit.committer.date.seconds,
+            files: detail.data.files.map(file => file.filename)
+          });
+        }
       }
 
       const currentTime = _.now();
@@ -80,3 +80,5 @@ export default class Bugspots {
     });
   }
 }
+
+module.exports = Bugspots;
