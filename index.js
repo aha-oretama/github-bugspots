@@ -1,7 +1,3 @@
-/**
- * @author aha-oretama
- * @Date 2018/05/28.
- */
 "use strict";
 
 import _ from 'lodash';
@@ -10,7 +6,7 @@ import addWalkerToRepo from 'js-git/mixins/walkers';
 import co from 'co'; // co is more popular than gen-run.
 import Octokit from '@octokit/rest';
 
-export default class BugSpots {
+export default class Bugspots {
   constructor(owner, repoName, token) {
     this.owner = owner;
     this.repoName = repoName;
@@ -26,9 +22,8 @@ export default class BugSpots {
     })
   }
 
-  // TODO: ローカルバージョンを作ったほうが元のbugspotsと同等の機能を持つ
   // デフォルトは正規表現にワード境界を使用。
-  analyze(regex = /\b(fix(es|ed)?|close(s|d)?)\b/i, branch = 'master') {
+  analyze(regex = /\b(fix(es|ed)?|close(s|d)?)\b/i, branch = 'master', depth = 10000) {
 
     let fixes = [];
 
@@ -41,7 +36,9 @@ export default class BugSpots {
 
       let commit;
       // TODO: logStream.read(), localOctokit.repos.getCommit()を使用する度にGitHub APIの制限数に引っかかる可能性がある。そのハンドリングを実装すべき
-      while (commit = yield logStream.read(), commit !== undefined) {
+      
+      while (commit = yield logStream.read() && commit !== undefined && depth > 0) {
+        depth--;
         console.info(commit);
         // if (regex.test(commit.message)) {
         const detail = yield localOctokit.repos.getCommit({

@@ -1,10 +1,20 @@
 {
   "name": "github-bugspots",
   "version": "0.0.1",
-  "private": true,
-  "repository": "https://github.com/aha-oretama/github-bugspots.git",
-  "author": "aha-oretama",
   "license": "MIT",
+  "main": "index.js",
+  "bin": "./bin/cli.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": "aha-oretama",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aha-oretama/github-bugspots.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aha-oretama/github-bugspots/issues"
+  },
   "scripts": {
     "build": "webpack"
   },
@@ -14,15 +24,5 @@
     "js-git": "^0.7.8",
     "js-github": "^1.1.0",
     "lodash": "^4.17.10"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "clean-webpack-plugin": "^0.1.19",
-    "copy-webpack-plugin": "^4.5.1",
-    "webpack": "^4.10.2",
-    "webpack-cli": "^3.0.0"
   }
 }
