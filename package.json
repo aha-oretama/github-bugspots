@@ -16,7 +16,7 @@
     "url": "https://github.com/aha-oretama/github-bugspots/issues"
   },
   "scripts": {
-    "build": "webpack"
+    "test": "mocha"
   },
   "dependencies": {
     "@octokit/rest": "^15.8.0",
@@ -26,5 +26,8 @@
     "js-git": "^0.7.8",
     "js-github": "^1.1.0",
     "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }
