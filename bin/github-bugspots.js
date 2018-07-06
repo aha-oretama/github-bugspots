@@ -25,7 +25,7 @@ new Bugspots(param.organization,param.repository,param.token).analyze(param.bran
     output += "\n";
     output += green("\tHotspots:\n");
     for (const spot of data.spots) {
-      output += red(`\t\t${spot.score}`);
+      output += red(`\t\t${spot.score.toFixed(4)}`);
       output += yellow(` - ${spot.file}\n`);
     }
     process.stdout.write(output);

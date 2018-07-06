@@ -12,7 +12,7 @@ The difference is that *github-bugspots* is customised for GitHub, and *github-b
 
 ## How to use for cli
 
-## How to use for library\
+## How to use for library
 
 ## Notification
 
