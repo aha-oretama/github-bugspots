@@ -9,12 +9,12 @@ process.stdout.write(green(`Scanning ${param.organization}/${param.repository} r
 new Bugspots(param.organization,param.repository,param.token).analyze(param.branch,param.depth, param.regex)
   .then(function (data) {
     let output = "";
-    output += yellow(`\tFound ${data.fixes.size} bugfix commits, with ${data.spots.size} hotspots:\n`);
+    output += yellow(`\tFound ${data.fixes.length} bugfix commits, with ${data.spots.length} hotspots:\n`);
     output += "\n";
     output += green(`\tFixes:\n`);
     
     for (const fix of data.fixes) {
-      let message = "\t\t-";
+      let message = "\t\t- ";
       if(param.displayTimestamps) {
         message += `${fix.date} `
       }
