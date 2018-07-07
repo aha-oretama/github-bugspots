@@ -4,16 +4,34 @@ The difference is that *github-bugspots* is customised for GitHub, and *github-b
 
 ***github-bugspots***
 * works only on GitHub.
-* is same logic as *bugspots*.
+* is same logic as *bugspots*. (However, the implementation method is difference, so result scores are just little difference.)
 * does not require to `git clone` the repositories before predictions.
 * internally works by using GitHub API, especially [Git Data API](https://developer.github.com/v3/git/).
  
 ## Motivation
+`bugspots` is very useful tool for getting the bug prediction.  
+However, to use `bugspots`, you must install it in local computer and `git clone` the target repository.
+Furthermore, it is not a library, so it is not easy to use in your program. 
+
+I want to use easily, for example, in web application.  
+Therefore, `github-bugspots` is made of [Node.js](https://nodejs.org/). And `github-bugspots` has two interfaces, one is a cli, another is a library.    
 
 ## How to use for cli
+```bash
+$ npm install -g github-bugspots
+$ github-bugspots --help
+$ github-bugspots target_organization target_repository your_token
+```
 
 ## How to use for library
+```javascript
+const Bugspots = require('github-bugspots');
 
+new Bugspots(organization, repository, token).analyze(branch, regex)
+  .then(function (data) {
+    console.log(data)
+  });
+```
 ## Notification
 
 *github-bugspots* internally uses GitHub API.  
