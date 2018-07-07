@@ -15,7 +15,7 @@ class Bugspots {
     })
   }
   
-  async analyze(branch = 'master', depth = 1000, regex = /\b(fix(es|ed)?|close(s|d)?)\b/i) {
+  async analyze(branch = 'master', regex = /\b(fix(es|ed)?|close(s|d)?)\b/i) {
     let fixes = [];
   
     let commits = await this._paginate(this.octokit.repos.getCommits, {

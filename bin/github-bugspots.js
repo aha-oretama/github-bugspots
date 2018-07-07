@@ -6,7 +6,7 @@ const colors = require('colors');
 const param = new CommandLine(process).getParam();
 
 process.stdout.write(green(`Scanning ${param.organization}/${param.repository} repo\n`));
-new Bugspots(param.organization,param.repository,param.token).analyze(param.branch,param.depth, param.regex)
+new Bugspots(param.organization,param.repository,param.token).analyze(param.branch, param.regex)
   .then(function (data) {
     let output = "";
     output += yellow(`\tFound ${data.fixes.length} bugfix commits, with ${data.spots.length} hotspots:\n`);
