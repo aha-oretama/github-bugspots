@@ -33,7 +33,7 @@ class Bugspots {
         });
     
         log(detail);
-    
+
         fixes.push({
           message: commit.commit.message.split('\n')[0],
           date: new Date(commit.commit.committer.date).getTime() / 1000,
@@ -41,10 +41,11 @@ class Bugspots {
         });
       }
     }
-    
+    fixes = _.sortBy(fixes, ['date']);
+
     const currentTime = _.now() / 1000;
     let hotspots = [];
-    const oldest_fix_date = _.last(fixes).date;
+    const oldest_fix_date = _.first(fixes).date;
     fixes.forEach(fix => {
       // TODO: Confirm whether to plus from low to high number. That is for a truncation error.
       fix.files.forEach(file => {
@@ -58,7 +59,6 @@ class Bugspots {
       })
     });
   
-    fixes = _.reverse(fixes);
     const spots = _.reverse(_.sortBy(hotspots, ['score', 'file']));
   
     return {
