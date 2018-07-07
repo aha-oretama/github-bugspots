@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "./bin/cli.js",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=7.6.0"
   },
   "author": "aha-oretama",
   "repository": {
