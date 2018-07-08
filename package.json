@@ -8,6 +8,11 @@
     "node": ">=7.6.0"
   },
   "author": "aha-oretama",
+  "keywords": [
+    "bugspots",
+    "git",
+    "github"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/aha-oretama/github-bugspots.git"

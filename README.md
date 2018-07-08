@@ -28,6 +28,10 @@ $ github-bugspots target_organization target_repository your_token
 ```
 
 ## How to use for library
+```bash
+$ npm install --save github-bugspots
+```
+
 ```javascript
 const Bugspots = require('github-bugspots');
 
