@@ -1,6 +1,6 @@
 # github-bugspots
 
-
+![node](https://img.shields.io/node/v/github-bugspots.svg)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 *github-bugspots* is based on *[bugspots](https://github.com/igrigorik/bugspots)* which is an implementation of the simple bug prediction heuristic outlined by the Google Engineering team ([Bug Predition at Google](http://google-engtools.blogspot.com/2011/12/bug-prediction-at-google.html)).  
