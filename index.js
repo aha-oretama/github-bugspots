@@ -68,7 +68,7 @@ class Bugspots {
   }
   
   async _paginate(method, param) {
-    let response = await method({...param, per_page: 100});
+    let response = await method(Object.assign(param, {per_page: 100}));
     let {data} = response;
     while (this.octokit.hasNextPage(response)) {
       response = await this.octokit.getNextPage(response);
