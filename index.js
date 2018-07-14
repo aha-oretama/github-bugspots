@@ -17,7 +17,8 @@ class Bugspots {
   
   async analyze(branch = 'master', regex = /\b(fix(es|ed)?|close(s|d)?)\b/i) {
     let fixes = [];
-  
+    let spots = [];
+
     let commits = await this._paginate(this.octokit.repos.getCommits, {
       owner: this.organization,
       repo: this.repository,
@@ -41,25 +42,31 @@ class Bugspots {
         });
       }
     }
+
+    if(fixes.length === 0) {
+      return {
+        fixes: fixes,
+        spots: spots
+      };
+    }
+
     fixes = _.sortBy(fixes, ['date']);
 
     const currentTime = _.now() / 1000;
-    let hotspots = [];
     const oldest_fix_date = _.first(fixes).date;
     fixes.forEach(fix => {
-      // TODO: Confirm whether to plus from low to high number. That is for a truncation error.
       fix.files.forEach(file => {
         const t = 1 - ((currentTime - fix.date) / (currentTime - oldest_fix_date));
-        let target = _.find(hotspots, {file: file});
+        let target = _.find(spots, {file: file});
         if (!target) {
-          hotspots.push({file: file, score: 0});
-          target = _.find(hotspots, {file: file});
+          spots.push({file: file, score: 0});
+          target = _.find(spots, {file: file});
         }
         target.score += 1 / (1 + Math.exp((-12 * t) + 12));
       })
     });
   
-    const spots = _.reverse(_.sortBy(hotspots, ['score', 'file']));
+    spots = _.reverse(_.sortBy(spots, ['score', 'file']));
   
     return {
       fixes: fixes,
