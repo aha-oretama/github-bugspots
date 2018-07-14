@@ -1,6 +1,6 @@
 {
   "name": "github-bugspots",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "index.js",
   "bin": "./bin/cli.js",
