@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: circleci/node:7.6.0
+    - image: circleci/node:8
 
 jobs:
   test:
@@ -12,12 +12,9 @@ jobs:
       - checkout
 
       - restore_cache:
-          keys:
-          - v1-dependencies-
-	  # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+          keys: v1-dependencies-
 
-      - run: npm install
+      - run: yarn install
       - run:
           name: Run tests
           command: npm test
@@ -46,7 +43,7 @@ workflows:
   version: 2
   test-publish:
     jobs:
-      - test:
+      - test
       - publish:
           requires:
             - test
