@@ -6,7 +6,7 @@ test('CommandLine should return all params when all args are passed', t => {
       const repository = "testRepo";
       const token = '1234567890';
       const branch = 'feature';
-      const regex = 'testRegex';
+      const regex = /testRegex/i;
 
       // Arrange
       process.argv = process.argv.slice(0, 2);
@@ -20,16 +20,16 @@ test('CommandLine should return all params when all args are passed', t => {
       t.is(param.repository, repository);
       t.is(param.token, token);
       t.is(param.branch, branch);
-      t.is(param.regex, regex);
+      t.deepEqual(param.regex, regex);
       t.true(param.displayTimestamps);
 });
 
-test.skip('CommandLine should return regex when word option passes', t => {
+test('CommandLine should return regex when word option passes', t => {
   const organization = 'testOrg';
   const repository = "testRepo";
   const token = '1234567890';
   const words = 'test,regex';
-  const regex = 'test|regex';
+  const regex = /test|regex/i;
 
   // Arrange
   process.argv = process.argv.slice(0, 2);
@@ -42,5 +42,5 @@ test.skip('CommandLine should return regex when word option passes', t => {
   t.is(param.organization, organization);
   t.is(param.repository, repository);
   t.is(param.token, token);
-  t.is(param.regex, regex);
+  t.deepEqual(param.regex, regex);
 });
