@@ -10,7 +10,7 @@ The difference is that *github-bugspots* is customised for GitHub, and *github-b
 * works only on GitHub.
 * is same logic as *bugspots*. (However, the implementation method is difference, so result scores are just little difference.)
 * does not require to `git clone` the repositories before predictions.
-* internally works by using GitHub API, especially [Git Data API](https://developer.github.com/v3/git/).
+* internally works by using GitHub API.
  
 ## Motivation
 `bugspots` is very useful tool for getting the bug prediction.  
