@@ -17,7 +17,13 @@ jobs:
       - run: yarn install
       - run:
           name: Run tests
-          command: npm test
+          command: |
+            mkdir -p ~/reports
+            npm run test -- --tap | npx tap-xunit > ~/reports/ava.xml
+      - store_test_results:
+          path: ~/reports
+      - store_artifacts:
+          path: ~/reports
 
       - save_cache:
           paths:
