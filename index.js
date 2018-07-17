@@ -37,7 +37,7 @@ class Bugspots {
 
         fixes.push({
           message: commit.commit.message.split('\n')[0],
-          date: new Date(commit.commit.committer.date).getTime() / 1000,
+          date: new Date(commit.commit.committer.date).getTime(),
           files: detail.data.files.map(file => file.filename)
         });
       }
@@ -52,7 +52,7 @@ class Bugspots {
 
     fixes = _.sortBy(fixes, ['date']);
 
-    const currentTime = _.now() / 1000;
+    const currentTime = _.now();
     const oldest_fix_date = _.first(fixes).date;
     fixes.forEach(fix => {
       fix.files.forEach(file => {

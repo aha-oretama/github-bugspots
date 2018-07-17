@@ -16,7 +16,7 @@ new Bugspots(param.organization,param.repository,param.token).analyze(param.bran
     for (const fix of data.fixes) {
       let message = "\t\t- ";
       if(param.displayTimestamps) {
-        message += `${fix.date} `
+        message += `${new Date(fix.date)} `
       }
       message += `${fix.message}\n`;
       output += yellow(message);
