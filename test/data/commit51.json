@@ -1,0 +1,98 @@
+{
+  "sha": "54bcd0804750c994db6c798255aa3d97944cca86",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo1NGJjZDA4MDQ3NTBjOTk0ZGI2Yzc5ODI1NWFhM2Q5Nzk0NGNjYTg2",
+  "commit": {
+    "author": {
+      "name": "Mark Mulder",
+      "email": "markmulder@gmail.com",
+      "date": "2011-12-15T10:46:05Z"
+    },
+    "committer": {
+      "name": "Mark Mulder",
+      "email": "markmulder@gmail.com",
+      "date": "2011-12-15T10:52:31Z"
+    },
+    "message": "Use sprintf instead of round for 187 compatibility\n\nFloat#round with arguments is not supported in 1.8.7 but sprintf can be\nused to get the same result.",
+    "tree": {
+      "sha": "82764015325e02d520e733c58dd28141b47f3118",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/82764015325e02d520e733c58dd28141b47f3118"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/54bcd0804750c994db6c798255aa3d97944cca86",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/54bcd0804750c994db6c798255aa3d97944cca86",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/54bcd0804750c994db6c798255aa3d97944cca86",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/54bcd0804750c994db6c798255aa3d97944cca86/comments",
+  "author": {
+    "login": "bittersweet",
+    "id": 39115,
+    "node_id": "MDQ6VXNlcjM5MTE1",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/39115?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bittersweet",
+    "html_url": "https://github.com/bittersweet",
+    "followers_url": "https://api.github.com/users/bittersweet/followers",
+    "following_url": "https://api.github.com/users/bittersweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bittersweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bittersweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bittersweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/bittersweet/orgs",
+    "repos_url": "https://api.github.com/users/bittersweet/repos",
+    "events_url": "https://api.github.com/users/bittersweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bittersweet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "bittersweet",
+    "id": 39115,
+    "node_id": "MDQ6VXNlcjM5MTE1",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/39115?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bittersweet",
+    "html_url": "https://github.com/bittersweet",
+    "followers_url": "https://api.github.com/users/bittersweet/followers",
+    "following_url": "https://api.github.com/users/bittersweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bittersweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bittersweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bittersweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/bittersweet/orgs",
+    "repos_url": "https://api.github.com/users/bittersweet/repos",
+    "events_url": "https://api.github.com/users/bittersweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bittersweet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "db68a33fe896c141ba85bee63cef9791ed66c009",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/db68a33fe896c141ba85bee63cef9791ed66c009",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/db68a33fe896c141ba85bee63cef9791ed66c009"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "2093160ca87ee91e46c7c4fbe560d6d4577b5e83",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/54bcd0804750c994db6c798255aa3d97944cca86/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/54bcd0804750c994db6c798255aa3d97944cca86/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=54bcd0804750c994db6c798255aa3d97944cca86",
+      "patch": "@@ -25,7 +25,7 @@ def self.scan(repo, depth = 500)\n     end\n \n     spots = hotspots.sort_by {|k,v| v}.reverse.collect do |spot|\n-      Spot.new(spot.first, spot.last.round(4))\n+      Spot.new(spot.first, sprintf('%.4f', spot.last))\n     end\n \n     return fixes, spots"
+    }
+  ]
+}

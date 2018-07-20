@@ -1,0 +1,98 @@
+{
+  "sha": "b17ae4c1951d448aa6613dba98c4942488d25b5b",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTpiMTdhZTRjMTk1MWQ0NDhhYTY2MTNkYmE5OGM0OTQyNDg4ZDI1YjVi",
+  "commit": {
+    "author": {
+      "name": "Bruno Michel",
+      "email": "brmichel@free.fr",
+      "date": "2012-10-06T08:49:19Z"
+    },
+    "committer": {
+      "name": "Bruno Michel",
+      "email": "brmichel@free.fr",
+      "date": "2012-10-06T08:49:19Z"
+    },
+    "message": "Improve the default regexp\n\nThe regexp was matching terms like fixtures, prefix or closet.\r\nI've added word boundary anchors to avoid that.",
+    "tree": {
+      "sha": "530775efd4dbcdc46110c2ae869e8f6c045e9fa9",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/530775efd4dbcdc46110c2ae869e8f6c045e9fa9"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/b17ae4c1951d448aa6613dba98c4942488d25b5b",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/b17ae4c1951d448aa6613dba98c4942488d25b5b",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/b17ae4c1951d448aa6613dba98c4942488d25b5b",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/b17ae4c1951d448aa6613dba98c4942488d25b5b/comments",
+  "author": {
+    "login": "nono",
+    "id": 2767,
+    "node_id": "MDQ6VXNlcjI3Njc=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/2767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nono",
+    "html_url": "https://github.com/nono",
+    "followers_url": "https://api.github.com/users/nono/followers",
+    "following_url": "https://api.github.com/users/nono/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nono/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nono/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nono/subscriptions",
+    "organizations_url": "https://api.github.com/users/nono/orgs",
+    "repos_url": "https://api.github.com/users/nono/repos",
+    "events_url": "https://api.github.com/users/nono/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nono/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "nono",
+    "id": 2767,
+    "node_id": "MDQ6VXNlcjI3Njc=",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/2767?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nono",
+    "html_url": "https://github.com/nono",
+    "followers_url": "https://api.github.com/users/nono/followers",
+    "following_url": "https://api.github.com/users/nono/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nono/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nono/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nono/subscriptions",
+    "organizations_url": "https://api.github.com/users/nono/orgs",
+    "repos_url": "https://api.github.com/users/nono/repos",
+    "events_url": "https://api.github.com/users/nono/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nono/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "2241e3b76e05d834264616536ae6d58a9476fc86",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/2241e3b76e05d834264616536ae6d58a9476fc86",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/2241e3b76e05d834264616536ae6d58a9476fc86"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "5c65113ff428f05ce853cc2fadefbb0ce9d0c96e",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/b17ae4c1951d448aa6613dba98c4942488d25b5b/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/b17ae4c1951d448aa6613dba98c4942488d25b5b/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=b17ae4c1951d448aa6613dba98c4942488d25b5b",
+      "patch": "@@ -12,7 +12,7 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n     end\n     fixes = []\n \n-    regex ||= /fix(es|ed)?|close(s|d)?/i\n+    regex ||= /\\b(fix(es|ed)?|close(s|d)?)\\b/i\n \n     tree = repo.tree(branch)\n "
+    }
+  ]
+}

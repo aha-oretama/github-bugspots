@@ -1,0 +1,98 @@
+{
+  "sha": "b55b140429de5b7f0cf1548f06fb6f72def682a6",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTpiNTViMTQwNDI5ZGU1YjdmMGNmMTU0OGYwNmZiNmY3MmRlZjY4MmE2",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2014-02-17T18:30:23Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2014-02-17T18:30:23Z"
+    },
+    "message": "add highlighting to readme",
+    "tree": {
+      "sha": "fbe318fb12954d122328bec469e434ef8da8efed",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/fbe318fb12954d122328bec469e434ef8da8efed"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/b55b140429de5b7f0cf1548f06fb6f72def682a6",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/b55b140429de5b7f0cf1548f06fb6f72def682a6",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/b55b140429de5b7f0cf1548f06fb6f72def682a6",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/b55b140429de5b7f0cf1548f06fb6f72def682a6/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "078e6acbe443883759d2488635ec2a556a35153f",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/078e6acbe443883759d2488635ec2a556a35153f",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/078e6acbe443883759d2488635ec2a556a35153f"
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "additions": 3,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "dfbef672576c960fd19eb85285f07e22c9e5d2f9",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/b55b140429de5b7f0cf1548f06fb6f72def682a6/README.md",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/b55b140429de5b7f0cf1548f06fb6f72def682a6/README.md",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/README.md?ref=b55b140429de5b7f0cf1548f06fb6f72def682a6",
+      "patch": "@@ -8,19 +8,19 @@ Point bugspots at any git repo and it will identify the hotspots for you.\n \n ## Usage\n \n-```\n+```bash\n $> gem install bugspots\n $> bugspots /path/to/repo\n $> git bugspots (in root of current git project, --help for options)\n ```\n \n ## Results\n \n-```\n+```bash\n $> cd /your/git/repo\n $> git bugspots -d 500\n \n-  .. example output .. \n+  .. example output ..\n \n \tScanning /git/eventmachine repo\n \tFound 31 bugfix commits, with 23 hotspots:"
+    }
+  ]
+}

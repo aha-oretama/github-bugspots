@@ -1,0 +1,72 @@
+{
+  "sha": "c89647bac4b37ddbef0eac38f1219530458d4f96",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTpjODk2NDdiYWM0YjM3ZGRiZWYwZWFjMzhmMTIxOTUzMDQ1OGQ0Zjk2",
+  "commit": {
+    "author": {
+      "name": "Michael Pellon",
+      "email": "michael@p3ll0n.net",
+      "date": "2011-12-15T23:04:23Z"
+    },
+    "committer": {
+      "name": "Michael Pellon",
+      "email": "michael@p3ll0n.net",
+      "date": "2011-12-15T23:04:23Z"
+    },
+    "message": "Added a \"-b\" and \"--branch\" option to the executable. Defaults to \"master\".",
+    "tree": {
+      "sha": "3e9d8487c6407c3cb57c87a9bfc028faed61022a",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/3e9d8487c6407c3cb57c87a9bfc028faed61022a"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/c89647bac4b37ddbef0eac38f1219530458d4f96",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/c89647bac4b37ddbef0eac38f1219530458d4f96",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/c89647bac4b37ddbef0eac38f1219530458d4f96",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/c89647bac4b37ddbef0eac38f1219530458d4f96/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "cb2de47d2d78200d67aa3919db39380022a0aafc",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/cb2de47d2d78200d67aa3919db39380022a0aafc",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/cb2de47d2d78200d67aa3919db39380022a0aafc"
+    }
+  ],
+  "stats": {
+    "total": 16,
+    "additions": 12,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "26e24dffe987d444a15acc5cc59240309f04309a",
+      "filename": "bin/bugspots",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 2,
+      "changes": 12,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/c89647bac4b37ddbef0eac38f1219530458d4f96/bin/bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/c89647bac4b37ddbef0eac38f1219530458d4f96/bin/bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/bugspots?ref=c89647bac4b37ddbef0eac38f1219530458d4f96",
+      "patch": "@@ -12,6 +12,11 @@ options = {}\n OptionParser.new do |opts|\n   opts.banner = \"Usage: bugspots /path/to/git/repo\"\n \n+  # Option: Set Branch\n+  opts.on('-b', '--branch [name]', 'branch to crawl') do |b|\n+    options[:branch] = b.to_s\n+  end\n+\n   # Option: Set Depth\n   opts.on('-d', '--depth [depth]', 'depth of log crawl (integer)') do |d|\n     options[:depth] = d.to_i\n@@ -28,12 +33,15 @@ OptionParser.new do |opts|\n   end\n end.parse!\n \n-# Set a reasonable default of depth\n+# Set a reasonable default of depth \n options[:depth] ||= 500\n \n+# Set master as the default branch\n+options[:branch] ||= \"master\"\n+\n puts \"Scanning #{ARGV[0]} repo\".foreground(:green)\n \n-fixes, spots = Bugspots.scan(ARGV[0], options[:depth], options[:words])\n+fixes, spots = Bugspots.scan(ARGV[0], options[:branch], options[:depth], options[:words])\n \n puts \"\\tFound #{fixes.size} bugfix commits, with #{spots.size} hotspots:\".foreground(:yellow)\n puts"
+    },
+    {
+      "sha": "3c4380ff105be695db5374e366a8f36b85e65955",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/c89647bac4b37ddbef0eac38f1219530458d4f96/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/c89647bac4b37ddbef0eac38f1219530458d4f96/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=c89647bac4b37ddbef0eac38f1219530458d4f96",
+      "patch": "@@ -5,7 +5,7 @@ module Bugspots\n   Fix = Struct.new(:message, :date, :files)\n   Spot = Struct.new(:file, :score)\n \n-  def self.scan(repo, depth = 500, words = nil)\n+  def self.scan(repo, branch = \"master\", depth = 500, words = nil)\n     repo = Grit::Repo.new(repo)\n     fixes = []\n \n@@ -15,7 +15,7 @@ def self.scan(repo, depth = 500, words = nil)\n       message_matchers = /fix(es|ed)|close(s|d)/\n     end\n \n-    repo.commits('master', depth).each do |commit|  \n+    repo.commits(branch, depth).each do |commit|  \n       if commit.message =~ message_matchers\n         files = commit.stats.files.map {|s| s.first}    \n         fixes << Fix.new(commit.short_message, commit.date, files)"
+    }
+  ]
+}

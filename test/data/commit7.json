@@ -1,0 +1,98 @@
+{
+  "sha": "7dc0b5433f331a2fb335585240bd72ebb9692462",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo3ZGMwYjU0MzNmMzMxYTJmYjMzNTU4NTI0MGJkNzJlYmI5NjkyNDYy",
+  "commit": {
+    "author": {
+      "name": "Philipp Claßen",
+      "email": "philipp.classen@posteo.de",
+      "date": "2015-06-30T22:34:20Z"
+    },
+    "committer": {
+      "name": "Philipp Claßen",
+      "email": "philipp.classen@posteo.de",
+      "date": "2015-06-30T22:34:20Z"
+    },
+    "message": "Fixed \"invalid byte sequence in UTF-8\"",
+    "tree": {
+      "sha": "75450bbb07d705dc72b33439686a4b6e680b0beb",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/75450bbb07d705dc72b33439686a4b6e680b0beb"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/7dc0b5433f331a2fb335585240bd72ebb9692462",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/7dc0b5433f331a2fb335585240bd72ebb9692462",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/7dc0b5433f331a2fb335585240bd72ebb9692462",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/7dc0b5433f331a2fb335585240bd72ebb9692462/comments",
+  "author": {
+    "login": "philipp-classen",
+    "id": 1616509,
+    "node_id": "MDQ6VXNlcjE2MTY1MDk=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1616509?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/philipp-classen",
+    "html_url": "https://github.com/philipp-classen",
+    "followers_url": "https://api.github.com/users/philipp-classen/followers",
+    "following_url": "https://api.github.com/users/philipp-classen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/philipp-classen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/philipp-classen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/philipp-classen/subscriptions",
+    "organizations_url": "https://api.github.com/users/philipp-classen/orgs",
+    "repos_url": "https://api.github.com/users/philipp-classen/repos",
+    "events_url": "https://api.github.com/users/philipp-classen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/philipp-classen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "philipp-classen",
+    "id": 1616509,
+    "node_id": "MDQ6VXNlcjE2MTY1MDk=",
+    "avatar_url": "https://avatars2.githubusercontent.com/u/1616509?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/philipp-classen",
+    "html_url": "https://github.com/philipp-classen",
+    "followers_url": "https://api.github.com/users/philipp-classen/followers",
+    "following_url": "https://api.github.com/users/philipp-classen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/philipp-classen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/philipp-classen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/philipp-classen/subscriptions",
+    "organizations_url": "https://api.github.com/users/philipp-classen/orgs",
+    "repos_url": "https://api.github.com/users/philipp-classen/repos",
+    "events_url": "https://api.github.com/users/philipp-classen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/philipp-classen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ccc30d608e63351f4fc093a15f635f837913f2e2",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/ccc30d608e63351f4fc093a15f635f837913f2e2",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/ccc30d608e63351f4fc093a15f635f837913f2e2"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "0d166e507fb5cbf6c4e9dc5b0684eddc0410a029",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/7dc0b5433f331a2fb335585240bd72ebb9692462/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/7dc0b5433f331a2fb335585240bd72ebb9692462/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=7dc0b5433f331a2fb335585240bd72ebb9692462",
+      "patch": "@@ -21,7 +21,7 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n         files = commit.diff(commit.parents.first).deltas.collect do |d|\n           d.old_file[:path]\n         end\n-        fixes << Fix.new(commit.message.split(\"\\n\").first, commit.time, files)\n+        fixes << Fix.new(commit.message.scrub.split(\"\\n\").first, commit.time, files)\n       end\n     end\n "
+    }
+  ]
+}

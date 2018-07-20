@@ -1,0 +1,110 @@
+{
+  "sha": "dd491dd8d9de487dd12acfd99e07a6cc7dccb226",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTpkZDQ5MWRkOGQ5ZGU0ODdkZDEyYWNmZDk5ZTA3YTZjYzdkY2NiMjI2",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2014-07-06T01:29:58Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2014-07-06T01:29:58Z"
+    },
+    "message": "update to use latest rugged API, closes #24",
+    "tree": {
+      "sha": "73a090c8608ac50c4395f9f862e782d2e5127191",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/73a090c8608ac50c4395f9f862e782d2e5127191"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/dd491dd8d9de487dd12acfd99e07a6cc7dccb226",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/dd491dd8d9de487dd12acfd99e07a6cc7dccb226",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/dd491dd8d9de487dd12acfd99e07a6cc7dccb226",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/dd491dd8d9de487dd12acfd99e07a6cc7dccb226/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e24819008dc2133ed6d669c156f17090dab11076",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/e24819008dc2133ed6d669c156f17090dab11076",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/e24819008dc2133ed6d669c156f17090dab11076"
+    }
+  ],
+  "stats": {
+    "total": 13,
+    "additions": 3,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "f085fdd26a9f95bdd615cde13dded727717c284b",
+      "filename": "bugspots.gemspec",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 5,
+      "changes": 6,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/dd491dd8d9de487dd12acfd99e07a6cc7dccb226/bugspots.gemspec",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/dd491dd8d9de487dd12acfd99e07a6cc7dccb226/bugspots.gemspec",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bugspots.gemspec?ref=dd491dd8d9de487dd12acfd99e07a6cc7dccb226",
+      "patch": "@@ -18,10 +18,6 @@ Gem::Specification.new do |s|\n   s.executables   = `git ls-files -- bin/*`.split(\"\\n\").map{ |f| File.basename(f) }\n   s.require_paths = [\"lib\"]\n \n-  s.add_dependency \"rugged\"\n+  s.add_dependency \"rugged\", \">= 0.21.0\"\n   s.add_dependency \"rainbow\"\n-\n-  # specify any dependencies here; for example:\n-  # s.add_development_dependency \"rspec\"\n-  # s.add_runtime_dependency \"rest-client\"\n end"
+    },
+    {
+      "sha": "dd28d3dc56725d380fc766f4d1c800d60767c99d",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 5,
+      "changes": 7,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/dd491dd8d9de487dd12acfd99e07a6cc7dccb226/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/dd491dd8d9de487dd12acfd99e07a6cc7dccb226/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=dd491dd8d9de487dd12acfd99e07a6cc7dccb226",
+      "patch": "@@ -9,16 +9,13 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n     fixes = []\n \n     repo = Rugged::Repository.new(repo)\n-    unless Rugged::Branch.each_name(repo).sort.find { |b| b == branch }\n+    unless repo.branches.each_name(:local).sort.find { |b| b == branch }\n       raise ArgumentError, \"no such branch in the repo: #{branch}\"\n     end\n \n     walker = Rugged::Walker.new(repo)\n     walker.sorting(Rugged::SORT_TOPO | Rugged::SORT_REVERSE)\n-\n-    tip = Rugged::Branch.lookup(repo, branch).tip.oid\n-    walker.push(tip)\n-\n+    walker.push(repo.branches[branch].target)\n     walker.each do |commit|\n       if commit.message =~ regex\n         files = commit.diff(commit.parents.first).deltas.collect do |d|"
+    }
+  ]
+}

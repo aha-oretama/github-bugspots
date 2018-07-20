@@ -1,0 +1,115 @@
+{
+  "sha": "534a59c232591411c5c58300612c6b71f49be52d",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo1MzRhNTljMjMyNTkxNDExYzVjNTgzMDA2MTJjNmI3MWY0OWJlNTJk",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2017-02-01T16:11:39Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2017-02-01T16:11:39Z"
+    },
+    "message": "Merge pull request #35 from hokuma/apply-depth-parameter\n\n:+1: Apply depth parameter",
+    "tree": {
+      "sha": "f941c313aca5dffebd1dc242cf7af74a5548cfaf",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/f941c313aca5dffebd1dc242cf7af74a5548cfaf"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/534a59c232591411c5c58300612c6b71f49be52d",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/534a59c232591411c5c58300612c6b71f49be52d",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/534a59c232591411c5c58300612c6b71f49be52d",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/534a59c232591411c5c58300612c6b71f49be52d/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "4fb960eb79e5a86b95a26f604035ab68b3992d2c",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/4fb960eb79e5a86b95a26f604035ab68b3992d2c",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/4fb960eb79e5a86b95a26f604035ab68b3992d2c"
+    },
+    {
+      "sha": "b30d952bbe2434afb8aab697722d717ec4492bb9",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/b30d952bbe2434afb8aab697722d717ec4492bb9",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/b30d952bbe2434afb8aab697722d717ec4492bb9"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 5,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "0aabf24f8c7fece22458e4e239a13c87f678ebc4",
+      "filename": "bin/bugspots",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 3,
+      "changes": 3,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/534a59c232591411c5c58300612c6b71f49be52d/bin/bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/534a59c232591411c5c58300612c6b71f49be52d/bin/bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/bugspots?ref=534a59c232591411c5c58300612c6b71f49be52d",
+      "patch": "@@ -40,9 +40,6 @@ OptionParser.new do |opts|\n   end\n end.parse!\n \n-# Set a reasonable default of depth\n-options[:depth] ||= 500\n-\n # Set master as the default branch\n options[:branch] ||= \"master\"\n "
+    },
+    {
+      "sha": "0b04ec8480dd9e6593bdc17ff6477019415d207d",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 3,
+      "changes": 8,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/534a59c232591411c5c58300612c6b71f49be52d/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/534a59c232591411c5c58300612c6b71f49be52d/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=534a59c232591411c5c58300612c6b71f49be52d",
+      "patch": "@@ -4,7 +4,7 @@ module Bugspots\n   Fix = Struct.new(:message, :date, :files)\n   Spot = Struct.new(:file, :score)\n \n-  def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n+  def self.scan(repo, branch = \"master\", depth = nil, regex = nil)\n     regex ||= /\\b(fix(es|ed)?|close(s|d)?)\\b/i\n     fixes = []\n \n@@ -14,8 +14,9 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n     end\n \n     walker = Rugged::Walker.new(repo)\n-    walker.sorting(Rugged::SORT_TOPO | Rugged::SORT_REVERSE)\n+    walker.sorting(Rugged::SORT_TOPO)\n     walker.push(repo.branches[branch].target)\n+    walker = walker.take(depth) if depth\n     walker.each do |commit|\n       if commit.message.scrub =~ regex\n         files = commit.diff(commit.parents.first).deltas.collect do |d|\n@@ -27,6 +28,7 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n \n     hotspots = Hash.new(0)\n     currentTime = Time.now\n+    oldest_fix_date = fixes.last.date\n     fixes.each do |fix|\n       fix.files.each do |file|\n         # The timestamp used in the equation is normalized from 0 to 1, where\n@@ -35,7 +37,7 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n         # with this algorithm due to the moving normalization; it's not meant\n         # to provide some objective score, only provide a means of comparison\n         # between one file and another at any one point in time\n-        t = 1 - ((currentTime - fix.date).to_f / (currentTime - fixes.first.date))\n+        t = 1 - ((currentTime - fix.date).to_f / (currentTime - oldest_fix_date))\n         hotspots[file] += 1/(1+Math.exp((-12*t)+12))\n       end\n     end"
+    }
+  ]
+}

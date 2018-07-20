@@ -1,0 +1,103 @@
+{
+  "sha": "7521c9283c3883b6d56087e2378f2bf2fa39305f",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo3NTIxYzkyODNjMzg4M2I2ZDU2MDg3ZTIzNzhmMmJmMmZhMzkzMDVm",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2011-12-15T08:31:11Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2011-12-15T08:31:11Z"
+    },
+    "message": "Merge pull request #1 from markmcspadden/master\n\nAdd depth + timestamps options to executable",
+    "tree": {
+      "sha": "7283d2b368be0c3cd585f287fa077665c8c1f10e",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/7283d2b368be0c3cd585f287fa077665c8c1f10e"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/7521c9283c3883b6d56087e2378f2bf2fa39305f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/7521c9283c3883b6d56087e2378f2bf2fa39305f",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/7521c9283c3883b6d56087e2378f2bf2fa39305f",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/7521c9283c3883b6d56087e2378f2bf2fa39305f/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e18924292bdd58f17aabfdbd12c1c48829d476ac",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/e18924292bdd58f17aabfdbd12c1c48829d476ac",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/e18924292bdd58f17aabfdbd12c1c48829d476ac"
+    },
+    {
+      "sha": "4a02d017af8fe528df6e62b194b760ab588411e0",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/4a02d017af8fe528df6e62b194b760ab588411e0",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/4a02d017af8fe528df6e62b194b760ab588411e0"
+    }
+  ],
+  "stats": {
+    "total": 20,
+    "additions": 18,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "068312610f54da15761120abc2d9146e032a9b55",
+      "filename": "bin/bugspots",
+      "status": "modified",
+      "additions": 18,
+      "deletions": 2,
+      "changes": 20,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/7521c9283c3883b6d56087e2378f2bf2fa39305f/bin/bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/7521c9283c3883b6d56087e2378f2bf2fa39305f/bin/bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/bugspots?ref=7521c9283c3883b6d56087e2378f2bf2fa39305f",
+      "patch": "@@ -11,18 +11,34 @@ ARGV << '--help' if ARGV.empty?\n options = {}\n OptionParser.new do |opts|\n   opts.banner = \"Usage: bugspots /path/to/git/repo\"\n+  \n+  # Option: Set Depth\n+  opts.on('-d', '--depth [depth]', 'depth of log crawl (integer)') do |d|\n+    options[:depth] = d.to_i\n+  end\n+  \n+  # Option: Set Timestamp Display\n+  opts.on('--display-timestamps', 'show timestamps of each identified fix commit') do |dt|\n+    options[:display_timestamps] = true\n+  end\n end.parse!\n \n+# Set a reasonable default of depth\n+options[:depth] ||= 500\n+\n puts \"Scanning #{ARGV[0]} repo\".foreground(:green)\n \n-fixes, spots = Bugspots.scan(ARGV[0])\n+fixes, spots = Bugspots.scan(ARGV[0], options[:depth])\n \n puts \"\\tFound #{fixes.size} bugfix commits, with #{spots.size} hotspots:\".foreground(:yellow)\n puts\n \n puts \"\\tFixes:\".foreground(:green).underline\n fixes.each do |fix|\n-  puts \"\\t\\t- #{fix.message}\".foreground(:yellow)\n+  message = \"\\t\\t- \"\n+  message << \"#{fix.date} \" if options[:display_timestamps]\n+  message << \"#{fix.message}\"\n+  puts message.foreground(:yellow)\n end\n \n puts \"\\n\""
+    }
+  ]
+}

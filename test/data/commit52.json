@@ -1,0 +1,110 @@
+{
+  "sha": "db68a33fe896c141ba85bee63cef9791ed66c009",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTpkYjY4YTMzZmU4OTZjMTQxYmE4NWJlZTYzY2VmOTc5MWVkNjZjMDA5",
+  "commit": {
+    "author": {
+      "name": "Mark Mulder",
+      "email": "markmulder@gmail.com",
+      "date": "2011-12-15T10:44:09Z"
+    },
+    "committer": {
+      "name": "Mark Mulder",
+      "email": "markmulder@gmail.com",
+      "date": "2011-12-15T10:52:31Z"
+    },
+    "message": "Clear whitespace",
+    "tree": {
+      "sha": "f341a909f4d71640dd4ffca873aa9e6d75071fa6",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/f341a909f4d71640dd4ffca873aa9e6d75071fa6"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/db68a33fe896c141ba85bee63cef9791ed66c009",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/db68a33fe896c141ba85bee63cef9791ed66c009",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/db68a33fe896c141ba85bee63cef9791ed66c009",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/db68a33fe896c141ba85bee63cef9791ed66c009/comments",
+  "author": {
+    "login": "bittersweet",
+    "id": 39115,
+    "node_id": "MDQ6VXNlcjM5MTE1",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/39115?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bittersweet",
+    "html_url": "https://github.com/bittersweet",
+    "followers_url": "https://api.github.com/users/bittersweet/followers",
+    "following_url": "https://api.github.com/users/bittersweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bittersweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bittersweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bittersweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/bittersweet/orgs",
+    "repos_url": "https://api.github.com/users/bittersweet/repos",
+    "events_url": "https://api.github.com/users/bittersweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bittersweet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "bittersweet",
+    "id": 39115,
+    "node_id": "MDQ6VXNlcjM5MTE1",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/39115?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bittersweet",
+    "html_url": "https://github.com/bittersweet",
+    "followers_url": "https://api.github.com/users/bittersweet/followers",
+    "following_url": "https://api.github.com/users/bittersweet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bittersweet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bittersweet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bittersweet/subscriptions",
+    "organizations_url": "https://api.github.com/users/bittersweet/orgs",
+    "repos_url": "https://api.github.com/users/bittersweet/repos",
+    "events_url": "https://api.github.com/users/bittersweet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bittersweet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7521c9283c3883b6d56087e2378f2bf2fa39305f",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/7521c9283c3883b6d56087e2378f2bf2fa39305f",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/7521c9283c3883b6d56087e2378f2bf2fa39305f"
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "additions": 5,
+    "deletions": 5
+  },
+  "files": [
+    {
+      "sha": "34989aeb98ab095feb948cdb1224b7fcea12cd75",
+      "filename": "bin/bugspots",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/db68a33fe896c141ba85bee63cef9791ed66c009/bin/bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/db68a33fe896c141ba85bee63cef9791ed66c009/bin/bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/bugspots?ref=db68a33fe896c141ba85bee63cef9791ed66c009",
+      "patch": "@@ -11,12 +11,12 @@ ARGV << '--help' if ARGV.empty?\n options = {}\n OptionParser.new do |opts|\n   opts.banner = \"Usage: bugspots /path/to/git/repo\"\n-  \n+\n   # Option: Set Depth\n   opts.on('-d', '--depth [depth]', 'depth of log crawl (integer)') do |d|\n     options[:depth] = d.to_i\n   end\n-  \n+\n   # Option: Set Timestamp Display\n   opts.on('--display-timestamps', 'show timestamps of each identified fix commit') do |dt|\n     options[:display_timestamps] = true"
+    },
+    {
+      "sha": "92b945e021be41c4b5ece15eb040b7b83f76c540",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 3,
+      "changes": 6,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/db68a33fe896c141ba85bee63cef9791ed66c009/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/db68a33fe896c141ba85bee63cef9791ed66c009/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=db68a33fe896c141ba85bee63cef9791ed66c009",
+      "patch": "@@ -9,9 +9,9 @@ def self.scan(repo, depth = 500)\n     repo = Grit::Repo.new(repo)\n     fixes = []\n \n-    repo.commits('master', depth).each do |commit|  \n+    repo.commits('master', depth).each do |commit|\n       if commit.message =~ /fix(es|ed)|close(s|d)/\n-        files = commit.stats.files.map {|s| s.first}    \n+        files = commit.stats.files.map {|s| s.first}\n         fixes << Fix.new(commit.short_message, commit.date, files)\n       end\n     end\n@@ -30,4 +30,4 @@ def self.scan(repo, depth = 500)\n \n     return fixes, spots\n   end\n-end\n\\ No newline at end of file\n+end"
+    }
+  ]
+}

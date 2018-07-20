@@ -1,0 +1,115 @@
+{
+  "sha": "6e9a894a6a087f509bbbdd2b54180edf15a4a5f7",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo2ZTlhODk0YTZhMDg3ZjUwOWJiYmRkMmI1NDE4MGVkZjE1YTRhNWY3",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2011-12-15T16:38:39Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2011-12-15T16:38:39Z"
+    },
+    "message": "Merge pull request #2 from bittersweet/187_compatibility\n\n187 compatibility",
+    "tree": {
+      "sha": "82764015325e02d520e733c58dd28141b47f3118",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/82764015325e02d520e733c58dd28141b47f3118"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/6e9a894a6a087f509bbbdd2b54180edf15a4a5f7",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/6e9a894a6a087f509bbbdd2b54180edf15a4a5f7",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/6e9a894a6a087f509bbbdd2b54180edf15a4a5f7",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/6e9a894a6a087f509bbbdd2b54180edf15a4a5f7/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7521c9283c3883b6d56087e2378f2bf2fa39305f",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/7521c9283c3883b6d56087e2378f2bf2fa39305f",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/7521c9283c3883b6d56087e2378f2bf2fa39305f"
+    },
+    {
+      "sha": "54bcd0804750c994db6c798255aa3d97944cca86",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/54bcd0804750c994db6c798255aa3d97944cca86",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/54bcd0804750c994db6c798255aa3d97944cca86"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "additions": 6,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "34989aeb98ab095feb948cdb1224b7fcea12cd75",
+      "filename": "bin/bugspots",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/6e9a894a6a087f509bbbdd2b54180edf15a4a5f7/bin/bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/6e9a894a6a087f509bbbdd2b54180edf15a4a5f7/bin/bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/bugspots?ref=6e9a894a6a087f509bbbdd2b54180edf15a4a5f7",
+      "patch": "@@ -11,12 +11,12 @@ ARGV << '--help' if ARGV.empty?\n options = {}\n OptionParser.new do |opts|\n   opts.banner = \"Usage: bugspots /path/to/git/repo\"\n-  \n+\n   # Option: Set Depth\n   opts.on('-d', '--depth [depth]', 'depth of log crawl (integer)') do |d|\n     options[:depth] = d.to_i\n   end\n-  \n+\n   # Option: Set Timestamp Display\n   opts.on('--display-timestamps', 'show timestamps of each identified fix commit') do |dt|\n     options[:display_timestamps] = true"
+    },
+    {
+      "sha": "2093160ca87ee91e46c7c4fbe560d6d4577b5e83",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/6e9a894a6a087f509bbbdd2b54180edf15a4a5f7/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/6e9a894a6a087f509bbbdd2b54180edf15a4a5f7/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=6e9a894a6a087f509bbbdd2b54180edf15a4a5f7",
+      "patch": "@@ -9,9 +9,9 @@ def self.scan(repo, depth = 500)\n     repo = Grit::Repo.new(repo)\n     fixes = []\n \n-    repo.commits('master', depth).each do |commit|  \n+    repo.commits('master', depth).each do |commit|\n       if commit.message =~ /fix(es|ed)|close(s|d)/\n-        files = commit.stats.files.map {|s| s.first}    \n+        files = commit.stats.files.map {|s| s.first}\n         fixes << Fix.new(commit.short_message, commit.date, files)\n       end\n     end\n@@ -25,9 +25,9 @@ def self.scan(repo, depth = 500)\n     end\n \n     spots = hotspots.sort_by {|k,v| v}.reverse.collect do |spot|\n-      Spot.new(spot.first, spot.last.round(4))\n+      Spot.new(spot.first, sprintf('%.4f', spot.last))\n     end\n \n     return fixes, spots\n   end\n-end\n\\ No newline at end of file\n+end"
+    }
+  ]
+}

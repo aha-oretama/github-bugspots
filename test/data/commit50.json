@@ -1,0 +1,110 @@
+{
+  "sha": "559e9c72aa8be12c718099694fbbf9818e3e7c3c",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo1NTllOWM3MmFhOGJlMTJjNzE4MDk5Njk0ZmJiZjk4MThlM2U3YzNj",
+  "commit": {
+    "author": {
+      "name": "Robert Pitts",
+      "email": "rbxbxdev@gmail.com",
+      "date": "2011-12-15T15:17:36Z"
+    },
+    "committer": {
+      "name": "Robert Pitts",
+      "email": "rbxbxdev@gmail.com",
+      "date": "2011-12-15T15:17:36Z"
+    },
+    "message": "Support setting Bugfix indicator",
+    "tree": {
+      "sha": "36fccae30b541bbcb19753a5a40dc339d8386289",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/36fccae30b541bbcb19753a5a40dc339d8386289"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/559e9c72aa8be12c718099694fbbf9818e3e7c3c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/559e9c72aa8be12c718099694fbbf9818e3e7c3c",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/559e9c72aa8be12c718099694fbbf9818e3e7c3c",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/559e9c72aa8be12c718099694fbbf9818e3e7c3c/comments",
+  "author": {
+    "login": "rbxbx",
+    "id": 45414,
+    "node_id": "MDQ6VXNlcjQ1NDE0",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/45414?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rbxbx",
+    "html_url": "https://github.com/rbxbx",
+    "followers_url": "https://api.github.com/users/rbxbx/followers",
+    "following_url": "https://api.github.com/users/rbxbx/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rbxbx/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rbxbx/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rbxbx/subscriptions",
+    "organizations_url": "https://api.github.com/users/rbxbx/orgs",
+    "repos_url": "https://api.github.com/users/rbxbx/repos",
+    "events_url": "https://api.github.com/users/rbxbx/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rbxbx/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "rbxbx",
+    "id": 45414,
+    "node_id": "MDQ6VXNlcjQ1NDE0",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/45414?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rbxbx",
+    "html_url": "https://github.com/rbxbx",
+    "followers_url": "https://api.github.com/users/rbxbx/followers",
+    "following_url": "https://api.github.com/users/rbxbx/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rbxbx/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rbxbx/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rbxbx/subscriptions",
+    "organizations_url": "https://api.github.com/users/rbxbx/orgs",
+    "repos_url": "https://api.github.com/users/rbxbx/repos",
+    "events_url": "https://api.github.com/users/rbxbx/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rbxbx/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "7521c9283c3883b6d56087e2378f2bf2fa39305f",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/7521c9283c3883b6d56087e2378f2bf2fa39305f",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/7521c9283c3883b6d56087e2378f2bf2fa39305f"
+    }
+  ],
+  "stats": {
+    "total": 19,
+    "additions": 15,
+    "deletions": 4
+  },
+  "files": [
+    {
+      "sha": "c13b05d253f314ed85c70636d45964e8c4951bd1",
+      "filename": "bin/bugspots",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 1,
+      "changes": 7,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/559e9c72aa8be12c718099694fbbf9818e3e7c3c/bin/bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/559e9c72aa8be12c718099694fbbf9818e3e7c3c/bin/bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/bugspots?ref=559e9c72aa8be12c718099694fbbf9818e3e7c3c",
+      "patch": "@@ -17,6 +17,11 @@ OptionParser.new do |opts|\n     options[:depth] = d.to_i\n   end\n   \n+  # Option: Set Bugfix Indicator\n+  opts.on('-w', '--words [\"w1,w2\"]', 'bugfix indicator, ie: \"fixes,closed\"') do |words|\n+    options[:words] = words\n+  end\n+\n   # Option: Set Timestamp Display\n   opts.on('--display-timestamps', 'show timestamps of each identified fix commit') do |dt|\n     options[:display_timestamps] = true\n@@ -28,7 +33,7 @@ options[:depth] ||= 500\n \n puts \"Scanning #{ARGV[0]} repo\".foreground(:green)\n \n-fixes, spots = Bugspots.scan(ARGV[0], options[:depth])\n+fixes, spots = Bugspots.scan(ARGV[0], options[:depth], options[:words])\n \n puts \"\\tFound #{fixes.size} bugfix commits, with #{spots.size} hotspots:\".foreground(:yellow)\n puts"
+    },
+    {
+      "sha": "a1f1ee780719cd728bb12456bc2c7085601d747a",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 9,
+      "deletions": 3,
+      "changes": 12,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/559e9c72aa8be12c718099694fbbf9818e3e7c3c/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/559e9c72aa8be12c718099694fbbf9818e3e7c3c/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=559e9c72aa8be12c718099694fbbf9818e3e7c3c",
+      "patch": "@@ -5,12 +5,18 @@ module Bugspots\n   Fix = Struct.new(:message, :date, :files)\n   Spot = Struct.new(:file, :score)\n \n-  def self.scan(repo, depth = 500)\n+  def self.scan(repo, depth = 500, words = nil)\n     repo = Grit::Repo.new(repo)\n     fixes = []\n \n+    if words\n+      message_matchers = /#{words.split(',').join('|')}/\n+    else\n+      message_matchers = /fix(es|ed)|close(s|d)/\n+    end\n+\n     repo.commits('master', depth).each do |commit|  \n-      if commit.message =~ /fix(es|ed)|close(s|d)/\n+      if commit.message =~ message_matchers\n         files = commit.stats.files.map {|s| s.first}    \n         fixes << Fix.new(commit.short_message, commit.date, files)\n       end\n@@ -30,4 +36,4 @@ def self.scan(repo, depth = 500)\n \n     return fixes, spots\n   end\n-end\n\\ No newline at end of file\n+end"
+    }
+  ]
+}

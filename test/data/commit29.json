@@ -1,0 +1,110 @@
+{
+  "sha": "423631f232e486f0604821fa21fa4b667dcbde5f",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo0MjM2MzFmMjMyZTQ4NmYwNjA0ODIxZmEyMWZhNGI2NjdkY2JkZTVm",
+  "commit": {
+    "author": {
+      "name": "Michael Gerbush",
+      "email": "msgerbush@gmail.com",
+      "date": "2012-01-11T21:46:15Z"
+    },
+    "committer": {
+      "name": "Michael Gerbush",
+      "email": "msgerbush@gmail.com",
+      "date": "2012-01-11T21:46:15Z"
+    },
+    "message": "Added -r option for arbitrary regex matching of commit messages refs #9.",
+    "tree": {
+      "sha": "f1b1613f89e711f6825cd672b2af23a05e003c4f",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/f1b1613f89e711f6825cd672b2af23a05e003c4f"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/423631f232e486f0604821fa21fa4b667dcbde5f",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/423631f232e486f0604821fa21fa4b667dcbde5f",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/423631f232e486f0604821fa21fa4b667dcbde5f",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/423631f232e486f0604821fa21fa4b667dcbde5f/comments",
+  "author": {
+    "login": "msgerbush",
+    "id": 405526,
+    "node_id": "MDQ6VXNlcjQwNTUyNg==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/405526?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/msgerbush",
+    "html_url": "https://github.com/msgerbush",
+    "followers_url": "https://api.github.com/users/msgerbush/followers",
+    "following_url": "https://api.github.com/users/msgerbush/following{/other_user}",
+    "gists_url": "https://api.github.com/users/msgerbush/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/msgerbush/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/msgerbush/subscriptions",
+    "organizations_url": "https://api.github.com/users/msgerbush/orgs",
+    "repos_url": "https://api.github.com/users/msgerbush/repos",
+    "events_url": "https://api.github.com/users/msgerbush/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/msgerbush/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "msgerbush",
+    "id": 405526,
+    "node_id": "MDQ6VXNlcjQwNTUyNg==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/405526?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/msgerbush",
+    "html_url": "https://github.com/msgerbush",
+    "followers_url": "https://api.github.com/users/msgerbush/followers",
+    "following_url": "https://api.github.com/users/msgerbush/following{/other_user}",
+    "gists_url": "https://api.github.com/users/msgerbush/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/msgerbush/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/msgerbush/subscriptions",
+    "organizations_url": "https://api.github.com/users/msgerbush/orgs",
+    "repos_url": "https://api.github.com/users/msgerbush/repos",
+    "events_url": "https://api.github.com/users/msgerbush/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/msgerbush/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f38f7a263197b0ed44c289d937e8f5df3623fba5",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/f38f7a263197b0ed44c289d937e8f5df3623fba5",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/f38f7a263197b0ed44c289d937e8f5df3623fba5"
+    }
+  ],
+  "stats": {
+    "total": 21,
+    "additions": 11,
+    "deletions": 10
+  },
+  "files": [
+    {
+      "sha": "826a23c141e2c6ab6add543b53ba9958d38b89a0",
+      "filename": "bin/git-bugspots",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 3,
+      "changes": 11,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/423631f232e486f0604821fa21fa4b667dcbde5f/bin/git-bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/423631f232e486f0604821fa21fa4b667dcbde5f/bin/git-bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/git-bugspots?ref=423631f232e486f0604821fa21fa4b667dcbde5f",
+      "patch": "@@ -23,8 +23,13 @@ OptionParser.new do |opts|\n   end\n   \n   # Option: Set Bugfix Indicator\n-  opts.on('-w', '--words [\"w1,w2\"]', 'bugfix indicator, ie: \"fixes,closed\"') do |words|\n-    options[:words] = words\n+  opts.on('-w', '--words [\"w1,w2\"]', 'bugfix indicator word list, ie: \"fixes,closed\"') do |words|\n+    options[:regex] = Regexp.new(words.split(',').join('|'))\n+  end\n+  \n+  # Option: Set Bugfix Indicator\n+  opts.on('-r', '--regex [regex]', Regexp, 'bugfix indicator regex, ie: \"fix(es|ed)?\" or \"/fixes #(\\d+)/i\"') do |regex|\n+    options[:regex] = regex\n   end\n \n   # Option: Set Timestamp Display\n@@ -41,7 +46,7 @@ options[:branch] ||= \"master\"\n \n puts \"Scanning #{ARGV[0]} repo\".foreground(:green)\n \n-fixes, spots = Bugspots.scan(ARGV[0], options[:branch], options[:depth], options[:words])\n+fixes, spots = Bugspots.scan(ARGV[0], options[:branch], options[:depth], options[:regex])\n \n puts \"\\tFound #{fixes.size} bugfix commits, with #{spots.size} hotspots:\".foreground(:yellow)\n puts"
+    },
+    {
+      "sha": "0a152c9152af64594ad408edb9952e1cd66e7737",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 7,
+      "changes": 10,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/423631f232e486f0604821fa21fa4b667dcbde5f/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/423631f232e486f0604821fa21fa4b667dcbde5f/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=423631f232e486f0604821fa21fa4b667dcbde5f",
+      "patch": "@@ -5,22 +5,18 @@ module Bugspots\n   Fix = Struct.new(:message, :date, :files)\n   Spot = Struct.new(:file, :score)\n \n-  def self.scan(repo, branch = \"master\", depth = 500, words = nil)\n+  def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n     repo = Grit::Repo.new(repo)\n     unless repo.branches.find { |e| e.name == branch }\n       raise ArgumentError, \"no such branch in the repo: #{branch}\"\n     end\n     fixes = []\n \n-    if words\n-      message_matchers = /#{words.split(',').join('|')}/\n-    else\n-      message_matchers = /fix(es|ed)?|close(s|d)?/i\n-    end\n+    regex ||= /fix(es|ed)?|close(s|d)?/i\n \n     tree = repo.tree(branch)\n     repo.commits(branch, depth).each do |commit|  \n-      if commit.message =~ message_matchers\n+      if commit.message =~ regex\n         files = commit.stats.files.map {|s| s.first}.select{ |s| tree/s }    \n         fixes << Fix.new(commit.short_message, commit.date, files)\n       end"
+    }
+  ]
+}
