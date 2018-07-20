@@ -1,0 +1,98 @@
+{
+  "sha": "e18924292bdd58f17aabfdbd12c1c48829d476ac",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTplMTg5MjQyOTJiZGQ1OGYxN2FhYmZkYmQxMmMxYzQ4ODI5ZDQ3NmFj",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2011-12-15T07:04:36Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2011-12-15T07:04:36Z"
+    },
+    "message": "add readme",
+    "tree": {
+      "sha": "b9d0c24293428517000b950ff559a36d86113303",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/b9d0c24293428517000b950ff559a36d86113303"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/e18924292bdd58f17aabfdbd12c1c48829d476ac",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/e18924292bdd58f17aabfdbd12c1c48829d476ac",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/e18924292bdd58f17aabfdbd12c1c48829d476ac",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/e18924292bdd58f17aabfdbd12c1c48829d476ac/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "716b9d8095f3ec92189051988ce2f5eb34fa37dd",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/716b9d8095f3ec92189051988ce2f5eb34fa37dd",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/716b9d8095f3ec92189051988ce2f5eb34fa37dd"
+    }
+  ],
+  "stats": {
+    "total": 85,
+    "additions": 85,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "520280fccd9ec318dd8a635805e4534d7ccc94bc",
+      "filename": "README.md",
+      "status": "added",
+      "additions": 85,
+      "deletions": 0,
+      "changes": 85,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/e18924292bdd58f17aabfdbd12c1c48829d476ac/README.md",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/e18924292bdd58f17aabfdbd12c1c48829d476ac/README.md",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/README.md?ref=e18924292bdd58f17aabfdbd12c1c48829d476ac",
+      "patch": "@@ -0,0 +1,85 @@\n+# Bugspots - Bug Prediction Heuristic\n+\n+An implementation of the simple bug prediction heuristic outlined by the Google Engineering team: [Bug Prediction at Google](http://google-engtools.blogspot.com/2011/12/bug-prediction-at-google.html)\n+\n+> Well, we actually have a great, authoritative record of where code has been requiring fixes: our bug tracker and our source control commit log! The research indicates that predicting bugs from the source history works very well, so we decided to deploy it at Google.\n+\n+Point bugspots at any git repo and it will identify the hotspots for you.\n+\n+## Usage\n+\n+```\n+$> gem install bugspots\n+$> bugspots /path/to/repo\n+```\n+\n+## Results\n+\n+```\n+$> bugspots /git/eventmachine\n+\n+\tScanning /git/eventmachine repo\n+\tFound 31 bugfix commits, with 23 hotspots:\n+\n+\tFixes:\n+\t\t- Revert \"Write maximum of 16KB of data to an SSL connection per tick (fixes #233)\" for #273\n+\t\t- Do not close attached sockets (fixes #200)\n+\t\t- Write maximum of 16KB of data to an SSL connection per tick (fixes #233)\n+\t\t- Merge branch 'master' into close_schedule_fix\n+\t\t- Remove dependency on readbytes.rb for ruby 1.9 (fixes #167, #234)\n+\t\t- Fix compilation on MSVC2008 (fixes #253)\n+\t\t- EM::Deferrable#(callback|errback|timeout) now return self so you can chain them (closes #177)\n+\t\t- Make EventMachine::Connection#get_peername and #get_sockname valid for IPv6 (closes #132)\n+\t\t- reconnect DNS socket if closed\n+\t\t- Use String#bytesize in EM::Connection#send_datagram for 1.9 (closes #153)\n+\t\t- Fix an issue that would cause the EM process to block when the loopbreak pipe filled up (closes #158)\n+\t\t- namespace std is already included, so just call min(). fixes vc6 issue with min macro\n+\t\t- Use close() instead of closesocket() to prevent FD leaks on windows.\n+\t\t- Stop advertising non-available authentication mechanisms, allow multi-line authentication - fixes compatibility with javamail\n+\t\t- typo fixes and undef fstat for ruby on Windows\n+\t\t- Deprecate now aged info, as it's fixed\n+\t\t- Some fixes for Solaris and Nexenta (opensolaris kernel + linux userland)\n+\t\t- Some fixes for solaris\n+\t\t- Minor fixes for rbx compatibility\n+\t\t- Reduce the size of the RunEpollOnce stack frame by 800kb. This fixes the long-standing epoll+threads issue (#84)\n+\t\t- Fixed aggregated event handling for kqueue and notify, fixed path for ifconfig.\n+\t\t- More win32 fixes\n+\t\t- Added test for reactor_thread? and fixed up EM.schedule for pre-reactor schedules\n+\t\t- Merge branch 'master' of git@github.com:eventmachine/eventmachine\n+\t\t- Use read instead of recv in ConnectionDescriptor::Read (fixes EM.attach issues with pipes)\n+\t\t- Use false to indicated a cancelled timer instead of using an empty proc. Reduces mem usage in certain situations.\n+\t\t- Inotify fixes: file_delete only fires after fds have been closed, use syscall hackery for older linux distributions (*cough* debian)\n+\t\t- Clean up deferrable.rb: fixed rdoc, alias method wrappers, remove unnecessary forwardable\n+\t\t- More solaris build fixes.\n+\t\t- More solaris build issues fixed\n+\t\t- fixed a small bug with basic auth (cherry-pick conflict merge from mmmurf (closes #92))\n+\n+\tHotspots:\n+\t\t0.9723 - ext/ed.cpp\n+\t\t0.3311 - ext/ed.h\n+\t\t0.3271 - ext/em.cpp\n+\t\t0.3034 - lib/eventmachine.rb\n+\t\t0.2433 - lib/em/protocols/postgres3.rb\n+\t\t0.2403 - ext/project.h\n+\t\t0.0431 - lib/em/deferrable.rb\n+\t\t0.029 - ext/cmain.cpp\n+\t\t0.0278 - ext/rubymain.cpp\n+\t\t0.0277 - ext/eventmachine.h\n+\t\t0.0241 - lib/em/resolver.rb\n+\t\t0.0241 - tests/test_resolver.rb\n+\t\t0.0225 - lib/em/connection.rb\n+\t\t0.0013 - lib/em/protocols/smtpserver.rb\n+\t\t0.0003 - ext/extconf.rb\n+\t\t0.0002 - tests/test_basic.rb\n+\t\t0.0001 - ext/em.h\n+\t\t0.0001 - ext/cplusplus.cpp\n+\t\t0.0001 - ext/fastfilereader/extconf.rb\n+\t\t0.0 - lib/em/filewatcher.rb\n+\t\t0.0 - tests/test_file_watch.rb\n+\t\t0.0 - ext/fastfilereader/mapper.cpp\n+\t\t0.0 - lib/protocols/httpclient.rb\n+```\n+\n+### License\n+\n+(MIT License) - Copyright (c) 2011 Ilya Grigorik\n\\ No newline at end of file"
+    }
+  ]
+}

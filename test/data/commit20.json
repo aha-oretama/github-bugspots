@@ -1,0 +1,103 @@
+{
+  "sha": "d9a259a2e6fbfe58ff6fa6cde9d6096fdd65c065",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTpkOWEyNTlhMmU2ZmJmZTU4ZmY2ZmE2Y2RlOWQ2MDk2ZmRkNjVjMDY1",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2013-01-21T22:43:42Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2013-01-21T22:43:42Z"
+    },
+    "message": "Merge pull request #20 from ncrowell/master\n\nhandle spaces in paths for git-bugspots",
+    "tree": {
+      "sha": "68748b37f29645d8ba51369dddd315a421f54177",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/68748b37f29645d8ba51369dddd315a421f54177"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/d9a259a2e6fbfe58ff6fa6cde9d6096fdd65c065",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/d9a259a2e6fbfe58ff6fa6cde9d6096fdd65c065",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/d9a259a2e6fbfe58ff6fa6cde9d6096fdd65c065",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/d9a259a2e6fbfe58ff6fa6cde9d6096fdd65c065/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "89b396995dad5444dbfb3a40eba497b9cf66f5be",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/89b396995dad5444dbfb3a40eba497b9cf66f5be",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/89b396995dad5444dbfb3a40eba497b9cf66f5be"
+    },
+    {
+      "sha": "9cb2c4a580ed2cebddcd5567bad28f117bfc1dc9",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/9cb2c4a580ed2cebddcd5567bad28f117bfc1dc9",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/9cb2c4a580ed2cebddcd5567bad28f117bfc1dc9"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "5f52822867e90540c379449d1ee980cedd4476af",
+      "filename": "bin/git-bugspots",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/d9a259a2e6fbfe58ff6fa6cde9d6096fdd65c065/bin/git-bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/d9a259a2e6fbfe58ff6fa6cde9d6096fdd65c065/bin/git-bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/git-bugspots?ref=d9a259a2e6fbfe58ff6fa6cde9d6096fdd65c065",
+      "patch": "@@ -4,4 +4,4 @@ if ARGV.empty? or not Dir.exists? ARGV[0]\n   ARGV.unshift Dir.pwd\n end\n \n-exec(\"bugspots #{ARGV.join(' ')}\")\n+exec 'bugspots', ARGV.join(' ')"
+    }
+  ]
+}

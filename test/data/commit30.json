@@ -1,0 +1,98 @@
+{
+  "sha": "f38f7a263197b0ed44c289d937e8f5df3623fba5",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTpmMzhmN2EyNjMxOTdiMGVkNDRjMjg5ZDkzN2U4ZjVkZjM2MjNmYmE1",
+  "commit": {
+    "author": {
+      "name": "Michael Gerbush",
+      "email": "msgerbush@gmail.com",
+      "date": "2012-01-11T20:53:47Z"
+    },
+    "committer": {
+      "name": "Michael Gerbush",
+      "email": "msgerbush@gmail.com",
+      "date": "2012-01-11T20:53:47Z"
+    },
+    "message": "Added rbenv files to git ignores.",
+    "tree": {
+      "sha": "2dab26854a6d6d8b8783cfa6b0a5861c81c80276",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/2dab26854a6d6d8b8783cfa6b0a5861c81c80276"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/f38f7a263197b0ed44c289d937e8f5df3623fba5",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/f38f7a263197b0ed44c289d937e8f5df3623fba5",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/f38f7a263197b0ed44c289d937e8f5df3623fba5",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/f38f7a263197b0ed44c289d937e8f5df3623fba5/comments",
+  "author": {
+    "login": "msgerbush",
+    "id": 405526,
+    "node_id": "MDQ6VXNlcjQwNTUyNg==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/405526?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/msgerbush",
+    "html_url": "https://github.com/msgerbush",
+    "followers_url": "https://api.github.com/users/msgerbush/followers",
+    "following_url": "https://api.github.com/users/msgerbush/following{/other_user}",
+    "gists_url": "https://api.github.com/users/msgerbush/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/msgerbush/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/msgerbush/subscriptions",
+    "organizations_url": "https://api.github.com/users/msgerbush/orgs",
+    "repos_url": "https://api.github.com/users/msgerbush/repos",
+    "events_url": "https://api.github.com/users/msgerbush/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/msgerbush/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "msgerbush",
+    "id": 405526,
+    "node_id": "MDQ6VXNlcjQwNTUyNg==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/405526?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/msgerbush",
+    "html_url": "https://github.com/msgerbush",
+    "followers_url": "https://api.github.com/users/msgerbush/followers",
+    "following_url": "https://api.github.com/users/msgerbush/following{/other_user}",
+    "gists_url": "https://api.github.com/users/msgerbush/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/msgerbush/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/msgerbush/subscriptions",
+    "organizations_url": "https://api.github.com/users/msgerbush/orgs",
+    "repos_url": "https://api.github.com/users/msgerbush/repos",
+    "events_url": "https://api.github.com/users/msgerbush/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/msgerbush/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "30c2eb121d706f2a77f70d7db999f247e640af37",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/30c2eb121d706f2a77f70d7db999f247e640af37",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/30c2eb121d706f2a77f70d7db999f247e640af37"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "d5dc6131b05dbbe0b61a72c2c61b586e814b56d1",
+      "filename": ".gitignore",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/f38f7a263197b0ed44c289d937e8f5df3623fba5/.gitignore",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/f38f7a263197b0ed44c289d937e8f5df3623fba5/.gitignore",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/.gitignore?ref=f38f7a263197b0ed44c289d937e8f5df3623fba5",
+      "patch": "@@ -2,3 +2,4 @@\n .bundle\n Gemfile.lock\n pkg/*\n+.rbenv-version"
+    }
+  ]
+}

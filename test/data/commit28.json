@@ -1,0 +1,110 @@
+{
+  "sha": "63ab5b9d1d085f42724f54b8544e54cb7c8e9885",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo2M2FiNWI5ZDFkMDg1ZjQyNzI0ZjU0Yjg1NDRlNTRjYjdjOGU5ODg1",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2012-01-15T15:43:18Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2012-01-15T15:48:26Z"
+    },
+    "message": "preserve 'bugspots' executable, but allow git integration as well",
+    "tree": {
+      "sha": "a6f083b32eb1572db4680cf20bffd13022e091f9",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/a6f083b32eb1572db4680cf20bffd13022e091f9"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/63ab5b9d1d085f42724f54b8544e54cb7c8e9885",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/63ab5b9d1d085f42724f54b8544e54cb7c8e9885",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/63ab5b9d1d085f42724f54b8544e54cb7c8e9885",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/63ab5b9d1d085f42724f54b8544e54cb7c8e9885/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "423631f232e486f0604821fa21fa4b667dcbde5f",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/423631f232e486f0604821fa21fa4b667dcbde5f",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/423631f232e486f0604821fa21fa4b667dcbde5f"
+    }
+  ],
+  "stats": {
+    "total": 136,
+    "additions": 74,
+    "deletions": 62
+  },
+  "files": [
+    {
+      "sha": "75d9b77e4cd3e3cc14d43664148e6b4fe5f1a2ec",
+      "filename": "bin/bugspots",
+      "status": "added",
+      "additions": 71,
+      "deletions": 0,
+      "changes": 71,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/63ab5b9d1d085f42724f54b8544e54cb7c8e9885/bin/bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/63ab5b9d1d085f42724f54b8544e54cb7c8e9885/bin/bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/bugspots?ref=63ab5b9d1d085f42724f54b8544e54cb7c8e9885",
+      "patch": "@@ -0,0 +1,71 @@\n+#!/usr/bin/env ruby\n+\n+lib = File.expand_path(File.dirname(__FILE__) + '/../lib')\n+$LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)\n+\n+require 'bugspots'\n+require 'optparse'\n+\n+ARGV << '--help' if ARGV.empty?\n+\n+options = {}\n+OptionParser.new do |opts|\n+  opts.banner = \"Usage: bugspots /path/to/git/repo\"\n+\n+  # Option: Set Branch\n+  opts.on('-b', '--branch [name]', 'branch to crawl') do |b|\n+    options[:branch] = b.to_s\n+  end\n+\n+  # Option: Set Depth\n+  opts.on('-d', '--depth [depth]', 'depth of log crawl (integer)') do |d|\n+    options[:depth] = d.to_i\n+  end\n+\n+  # Option: Set Bugfix Indicator\n+  opts.on('-w', '--words [\"w1,w2\"]', 'bugfix indicator word list, ie: \"fixes,closed\"') do |words|\n+    options[:regex] = Regexp.new(words.split(',').join('|'))\n+  end\n+\n+  # Option: Set Bugfix Indicator\n+  opts.on('-r', '--regex [regex]', Regexp, 'bugfix indicator regex, ie: \"fix(es|ed)?\" or \"/fixes #(\\d+)/i\"') do |regex|\n+    options[:regex] = regex\n+  end\n+\n+  # Option: Set Timestamp Display\n+  opts.on('--display-timestamps', 'show timestamps of each identified fix commit') do |dt|\n+    options[:display_timestamps] = true\n+  end\n+end.parse!\n+\n+# Set a reasonable default of depth\n+options[:depth] ||= 500\n+\n+# Set master as the default branch\n+options[:branch] ||= \"master\"\n+\n+puts \"Scanning #{ARGV[0]} repo\".foreground(:green)\n+\n+begin\n+  fixes, spots = Bugspots.scan(ARGV[0], options[:branch], options[:depth], options[:regex])\n+\n+  puts \"\\tFound #{fixes.size} bugfix commits, with #{spots.size} hotspots:\".foreground(:yellow)\n+  puts\n+\n+  puts \"\\tFixes:\".foreground(:green).underline\n+  fixes.each do |fix|\n+    message = \"\\t\\t- \"\n+    message << \"#{fix.date} \" if options[:display_timestamps]\n+    message << \"#{fix.message}\"\n+    puts message.foreground(:yellow)\n+  end\n+\n+  puts \"\\n\"\n+  puts \"\\tHotspots:\".foreground(:green).underline\n+  spots.each do |spot|\n+    puts \"\\t\\t#{spot.score}\".foreground(:red) + \" - #{spot.file}\".foreground(:yellow)\n+  end\n+\n+rescue Grit::InvalidGitRepositoryError\n+  puts \"Invalid Git repository - please run from or specify the full path to the root of the project.\".foreground(:red)\n+end"
+    },
+    {
+      "sha": "fba1a2ea1c0768c9192cd0332b833d15a9874d99",
+      "filename": "bin/git-bugspots",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 62,
+      "changes": 65,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/63ab5b9d1d085f42724f54b8544e54cb7c8e9885/bin/git-bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/63ab5b9d1d085f42724f54b8544e54cb7c8e9885/bin/git-bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/git-bugspots?ref=63ab5b9d1d085f42724f54b8544e54cb7c8e9885",
+      "patch": "@@ -1,66 +1,7 @@\n #!/usr/bin/env ruby\n \n-lib = File.expand_path(File.dirname(__FILE__) + '/../lib')\n-$LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)\n-\n-require 'bugspots'\n-require 'optparse'\n-\n-ARGV << '--help' if ARGV.empty?\n-\n-options = {}\n-OptionParser.new do |opts|\n-  opts.banner = \"Usage: bugspots /path/to/git/repo\"\n-\n-  # Option: Set Branch\n-  opts.on('-b', '--branch [name]', 'branch to crawl') do |b|\n-    options[:branch] = b.to_s\n-  end\n-\n-  # Option: Set Depth\n-  opts.on('-d', '--depth [depth]', 'depth of log crawl (integer)') do |d|\n-    options[:depth] = d.to_i\n-  end\n-  \n-  # Option: Set Bugfix Indicator\n-  opts.on('-w', '--words [\"w1,w2\"]', 'bugfix indicator word list, ie: \"fixes,closed\"') do |words|\n-    options[:regex] = Regexp.new(words.split(',').join('|'))\n-  end\n-  \n-  # Option: Set Bugfix Indicator\n-  opts.on('-r', '--regex [regex]', Regexp, 'bugfix indicator regex, ie: \"fix(es|ed)?\" or \"/fixes #(\\d+)/i\"') do |regex|\n-    options[:regex] = regex\n-  end\n-\n-  # Option: Set Timestamp Display\n-  opts.on('--display-timestamps', 'show timestamps of each identified fix commit') do |dt|\n-    options[:display_timestamps] = true\n-  end\n-end.parse!\n-\n-# Set a reasonable default of depth \n-options[:depth] ||= 500\n-\n-# Set master as the default branch\n-options[:branch] ||= \"master\"\n-\n-puts \"Scanning #{ARGV[0]} repo\".foreground(:green)\n-\n-fixes, spots = Bugspots.scan(ARGV[0], options[:branch], options[:depth], options[:regex])\n-\n-puts \"\\tFound #{fixes.size} bugfix commits, with #{spots.size} hotspots:\".foreground(:yellow)\n-puts\n-\n-puts \"\\tFixes:\".foreground(:green).underline\n-fixes.each do |fix|\n-  message = \"\\t\\t- \"\n-  message << \"#{fix.date} \" if options[:display_timestamps]\n-  message << \"#{fix.message}\"\n-  puts message.foreground(:yellow)\n+if ARGV.empty? or not Dir.exists? ARGV[0]\n+  ARGV.unshift Dir.pwd\n end\n \n-puts \"\\n\"\n-puts \"\\tHotspots:\".foreground(:green).underline\n-spots.each do |spot|\n-  puts \"\\t\\t#{spot.score}\".foreground(:red) + \" - #{spot.file}\".foreground(:yellow)\n-end\n+exec(\"bugspots #{ARGV.join(' ')}\")"
+    }
+  ]
+}

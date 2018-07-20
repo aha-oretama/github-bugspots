@@ -1,0 +1,98 @@
+{
+  "sha": "82cc1ca5b46d594413568ae693fb3e9eea00ef62",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo4MmNjMWNhNWI0NmQ1OTQ0MTM1NjhhZTY5M2ZiM2U5ZWVhMDBlZjYy",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2011-12-16T06:44:58Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2011-12-16T06:44:58Z"
+    },
+    "message": "bump to 0.0.3",
+    "tree": {
+      "sha": "eb03f6884ab563522c7a5e6e3190cdb1f670ddc6",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/eb03f6884ab563522c7a5e6e3190cdb1f670ddc6"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/82cc1ca5b46d594413568ae693fb3e9eea00ef62",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/82cc1ca5b46d594413568ae693fb3e9eea00ef62",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/82cc1ca5b46d594413568ae693fb3e9eea00ef62",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/82cc1ca5b46d594413568ae693fb3e9eea00ef62/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "85b4e073b95a206d14cdb1a5fabfdf49bacfc023",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/85b4e073b95a206d14cdb1a5fabfdf49bacfc023",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/85b4e073b95a206d14cdb1a5fabfdf49bacfc023"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "537a872a359dd08de85bb2568c5d1874ea7af011",
+      "filename": "lib/bugspots/version.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/82cc1ca5b46d594413568ae693fb3e9eea00ef62/lib/bugspots/version.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/82cc1ca5b46d594413568ae693fb3e9eea00ef62/lib/bugspots/version.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/version.rb?ref=82cc1ca5b46d594413568ae693fb3e9eea00ef62",
+      "patch": "@@ -1,3 +1,3 @@\n module Bugspots\n-  VERSION = \"0.0.2\"\n+  VERSION = \"0.0.3\"\n end"
+    }
+  ]
+}

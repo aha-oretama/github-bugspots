@@ -1,6 +1,5 @@
 "use strict";
 
-const _ = require('lodash');
 const Octokit = require('@octokit/rest');
 
 class Bugspots {
@@ -50,23 +49,40 @@ class Bugspots {
       };
     }
 
-    fixes = _.sortBy(fixes, ['date']);
+    fixes.sort(function (fix1, fix2) {
+      return fix1.date - fix2.date;
+    });
 
-    const currentTime = _.now();
-    const oldest_fix_date = _.first(fixes).date;
+    const currentTime = Date.now();
+    const oldest_fix_date = fixes[0].date;
     fixes.forEach(fix => {
       fix.files.forEach(file => {
         const t = 1 - ((currentTime - fix.date) / (currentTime - oldest_fix_date));
-        let target = _.find(spots, {file: file});
+        let target = spots.find(function (spot) {
+          return spot.file === file;
+        });
         if (!target) {
           spots.push({file: file, score: 0});
-          target = _.find(spots, {file: file});
+          target = spots.find(function (spot) {
+            return spot.file === file;
+          });
         }
         target.score += 1 / (1 + Math.exp((-12 * t) + 12));
       })
     });
-  
-    spots = _.reverse(_.sortBy(spots, ['score', 'file']));
+
+    spots = spots.sort(function (spot1, spot2) {
+      if (spot1.score === spot2.score) {
+        if(spot1.file < spot2.file) {
+          return -1;
+        }
+        if(spot1.file > spot2.file) {
+          return 1;
+        }
+        return 0;
+      }
+      return spot2.score - spot1.score;
+    });
   
     return {
       fixes: fixes,

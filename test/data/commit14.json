@@ -1,0 +1,134 @@
+{
+  "sha": "09dd054a422e17531710f36eef106d6a2e8fe56e",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTowOWRkMDU0YTQyMmUxNzUzMTcxMGYzNmVlZjEwNmQ2YTJlOGZlNTZl",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2014-02-17T20:47:12Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2014-02-17T20:47:12Z"
+    },
+    "message": "fix scoring function, use latest rugged build",
+    "tree": {
+      "sha": "c751909f9952021b6b0b2967e49dcc075e694c16",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/c751909f9952021b6b0b2967e49dcc075e694c16"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/09dd054a422e17531710f36eef106d6a2e8fe56e",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/09dd054a422e17531710f36eef106d6a2e8fe56e",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/09dd054a422e17531710f36eef106d6a2e8fe56e",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/09dd054a422e17531710f36eef106d6a2e8fe56e/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "78b54c0970e592cbcc9b1027c3dc61c06e12a97a",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/78b54c0970e592cbcc9b1027c3dc61c06e12a97a",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/78b54c0970e592cbcc9b1027c3dc61c06e12a97a"
+    }
+  ],
+  "stats": {
+    "total": 18,
+    "additions": 12,
+    "deletions": 6
+  },
+  "files": [
+    {
+      "sha": "8b552a3230a8b48e39fac156ac7e87be443628e5",
+      "filename": "Gemfile",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/09dd054a422e17531710f36eef106d6a2e8fe56e/Gemfile",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/09dd054a422e17531710f36eef106d6a2e8fe56e/Gemfile",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/Gemfile?ref=09dd054a422e17531710f36eef106d6a2e8fe56e",
+      "patch": "@@ -1,4 +1,6 @@\n source \"http://rubygems.org\"\n \n+gem 'rugged', git: 'git://github.com/libgit2/rugged.git', branch: 'development', submodules: true\n+\n # Specify your gem's dependencies in bugspots.gemspec\n gemspec"
+    },
+    {
+      "sha": "7a99170180f4699d9fd361bc8d97cc611a03e845",
+      "filename": "bin/bugspots",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 3,
+      "changes": 4,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/09dd054a422e17531710f36eef106d6a2e8fe56e/bin/bugspots",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/09dd054a422e17531710f36eef106d6a2e8fe56e/bin/bugspots",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bin/bugspots?ref=09dd054a422e17531710f36eef106d6a2e8fe56e",
+      "patch": "@@ -68,8 +68,6 @@ begin\n     puts \"\\t\\t#{spot.score}\".foreground(:red) + \" - #{spot.file}\".foreground(:yellow)\n   end\n \n-rescue Exception => e\n-  p e\n-  p e.backtrace.first(5).join(\"\\n\")\n+rescue Rugged::RepositoryError\n   puts \"Invalid Git repository - please run from or specify the full path to the root of the project.\".foreground(:red)\n end"
+    },
+    {
+      "sha": "246d94ccdad1056cf6d856c72c9989edb2e63ca8",
+      "filename": "bugspots.gemspec",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/09dd054a422e17531710f36eef106d6a2e8fe56e/bugspots.gemspec",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/09dd054a422e17531710f36eef106d6a2e8fe56e/bugspots.gemspec",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/bugspots.gemspec?ref=09dd054a422e17531710f36eef106d6a2e8fe56e",
+      "patch": "@@ -18,7 +18,7 @@ Gem::Specification.new do |s|\n   s.executables   = `git ls-files -- bin/*`.split(\"\\n\").map{ |f| File.basename(f) }\n   s.require_paths = [\"lib\"]\n \n-  s.add_dependency \"rugged\"\n+#  s.add_dependency \"rugged\"\n   s.add_dependency \"rainbow\"\n \n   # specify any dependencies here; for example:"
+    },
+    {
+      "sha": "4601be04653b808dd74cc20fe849e328c2f3db57",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 2,
+      "changes": 10,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/09dd054a422e17531710f36eef106d6a2e8fe56e/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/09dd054a422e17531710f36eef106d6a2e8fe56e/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=09dd054a422e17531710f36eef106d6a2e8fe56e",
+      "patch": "@@ -14,7 +14,7 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n     end\n \n     walker = Rugged::Walker.new(repo)\n-    # walker.sorting(Rugged::SORT_TOPO | Rugged::SORT_REVERSE)\n+    walker.sorting(Rugged::SORT_TOPO | Rugged::SORT_REVERSE)\n \n     tip = Rugged::Branch.lookup(repo, branch).tip.oid\n     walker.push(tip)\n@@ -31,7 +31,13 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n     hotspots = Hash.new(0)\n     fixes.each do |fix|\n       fix.files.each do |file|\n-        t = 1 - ((Time.now - fix.date).to_f / (Time.now - fixes.last.date))\n+        # The timestamp used in the equation is normalized from 0 to 1, where\n+        # 0 is the earliest point in the code base, and 1 is now (where now is\n+        # when the algorithm was run). Note that the score changes over time\n+        # with this algorithm due to the moving normalization; it's not meant\n+        # to provide some objective score, only provide a means of comparison\n+        # between one file and another at any one point in time\n+        t = 1 - ((Time.now - fix.date).to_f / (Time.now - fixes.first.date))\n         hotspots[file] += 1/(1+Math.exp((-12*t)+12))\n       end\n     end"
+    }
+  ]
+}

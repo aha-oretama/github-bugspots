@@ -1,0 +1,98 @@
+{
+  "sha": "01e4d4ca10d28f5c1beece4351e40862ac0eec89",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTowMWU0ZDRjYTEwZDI4ZjVjMWJlZWNlNDM1MWU0MDg2MmFjMGVlYzg5",
+  "commit": {
+    "author": {
+      "name": "Andy Stewart",
+      "email": "boss@airbladesoftware.com",
+      "date": "2011-12-19T19:01:46Z"
+    },
+    "committer": {
+      "name": "Andy Stewart",
+      "email": "boss@airbladesoftware.com",
+      "date": "2011-12-19T19:01:46Z"
+    },
+    "message": "Allow imperative form of 'close'.\r\n\r\nThis is consistent with git's message style.",
+    "tree": {
+      "sha": "6a7e22f4aee5991553efb1c957eea3cd8df3cafe",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/6a7e22f4aee5991553efb1c957eea3cd8df3cafe"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/01e4d4ca10d28f5c1beece4351e40862ac0eec89",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/01e4d4ca10d28f5c1beece4351e40862ac0eec89",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/01e4d4ca10d28f5c1beece4351e40862ac0eec89",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/01e4d4ca10d28f5c1beece4351e40862ac0eec89/comments",
+  "author": {
+    "login": "airblade",
+    "id": 7265,
+    "node_id": "MDQ6VXNlcjcyNjU=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/7265?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/airblade",
+    "html_url": "https://github.com/airblade",
+    "followers_url": "https://api.github.com/users/airblade/followers",
+    "following_url": "https://api.github.com/users/airblade/following{/other_user}",
+    "gists_url": "https://api.github.com/users/airblade/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/airblade/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/airblade/subscriptions",
+    "organizations_url": "https://api.github.com/users/airblade/orgs",
+    "repos_url": "https://api.github.com/users/airblade/repos",
+    "events_url": "https://api.github.com/users/airblade/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/airblade/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "airblade",
+    "id": 7265,
+    "node_id": "MDQ6VXNlcjcyNjU=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/7265?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/airblade",
+    "html_url": "https://github.com/airblade",
+    "followers_url": "https://api.github.com/users/airblade/followers",
+    "following_url": "https://api.github.com/users/airblade/following{/other_user}",
+    "gists_url": "https://api.github.com/users/airblade/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/airblade/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/airblade/subscriptions",
+    "organizations_url": "https://api.github.com/users/airblade/orgs",
+    "repos_url": "https://api.github.com/users/airblade/repos",
+    "events_url": "https://api.github.com/users/airblade/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/airblade/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "66e8f4414e97adec05a4014905bf5a8b7cfc2048",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/66e8f4414e97adec05a4014905bf5a8b7cfc2048",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/66e8f4414e97adec05a4014905bf5a8b7cfc2048"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "c6f047c6800ce00fddd58815fe7378f189921a23",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/01e4d4ca10d28f5c1beece4351e40862ac0eec89/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/01e4d4ca10d28f5c1beece4351e40862ac0eec89/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=01e4d4ca10d28f5c1beece4351e40862ac0eec89",
+      "patch": "@@ -12,7 +12,7 @@ def self.scan(repo, branch = \"master\", depth = 500, words = nil)\n     if words\n       message_matchers = /#{words.split(',').join('|')}/\n     else\n-      message_matchers = /fix(es|ed)?|close(s|d)/i\n+      message_matchers = /fix(es|ed)?|close(s|d)?/i\n     end\n \n     repo.commits(branch, depth).each do |commit|  "
+    }
+  ]
+}

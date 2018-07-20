@@ -1,0 +1,103 @@
+{
+  "sha": "4fb960eb79e5a86b95a26f604035ab68b3992d2c",
+  "node_id": "MDY6Q29tbWl0Mjk4NTk0NTo0ZmI5NjBlYjc5ZTVhODZiOTVhMjZmNjA0MDM1YWI2OGIzOTkyZDJj",
+  "commit": {
+    "author": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2015-11-12T15:19:49Z"
+    },
+    "committer": {
+      "name": "Ilya Grigorik",
+      "email": "ilya@igvita.com",
+      "date": "2015-11-12T15:19:49Z"
+    },
+    "message": "Merge pull request #29 from niwatolli3/fix-current-time\n\nFix bugspot calculation for current time",
+    "tree": {
+      "sha": "9513ca58100ef2257cb90e1fc7a2eb9e31e51815",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/git/trees/9513ca58100ef2257cb90e1fc7a2eb9e31e51815"
+    },
+    "url": "https://api.github.com/repos/igrigorik/bugspots/git/commits/4fb960eb79e5a86b95a26f604035ab68b3992d2c",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/igrigorik/bugspots/commits/4fb960eb79e5a86b95a26f604035ab68b3992d2c",
+  "html_url": "https://github.com/igrigorik/bugspots/commit/4fb960eb79e5a86b95a26f604035ab68b3992d2c",
+  "comments_url": "https://api.github.com/repos/igrigorik/bugspots/commits/4fb960eb79e5a86b95a26f604035ab68b3992d2c/comments",
+  "author": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "igrigorik",
+    "id": 10652,
+    "node_id": "MDQ6VXNlcjEwNjUy",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/10652?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/igrigorik",
+    "html_url": "https://github.com/igrigorik",
+    "followers_url": "https://api.github.com/users/igrigorik/followers",
+    "following_url": "https://api.github.com/users/igrigorik/following{/other_user}",
+    "gists_url": "https://api.github.com/users/igrigorik/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/igrigorik/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/igrigorik/subscriptions",
+    "organizations_url": "https://api.github.com/users/igrigorik/orgs",
+    "repos_url": "https://api.github.com/users/igrigorik/repos",
+    "events_url": "https://api.github.com/users/igrigorik/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/igrigorik/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "dd2dfc7fe1bf7899cc6209417f54f5cb79317458",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/dd2dfc7fe1bf7899cc6209417f54f5cb79317458",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/dd2dfc7fe1bf7899cc6209417f54f5cb79317458"
+    },
+    {
+      "sha": "bff6442cf693f281df102d5fcc8ad05bb0a9e319",
+      "url": "https://api.github.com/repos/igrigorik/bugspots/commits/bff6442cf693f281df102d5fcc8ad05bb0a9e319",
+      "html_url": "https://github.com/igrigorik/bugspots/commit/bff6442cf693f281df102d5fcc8ad05bb0a9e319"
+    }
+  ],
+  "stats": {
+    "total": 3,
+    "additions": 2,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "0c48f74e6aefe10a049cbfd7267fb44a3ada9570",
+      "filename": "lib/bugspots/scanner.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 1,
+      "changes": 3,
+      "blob_url": "https://github.com/igrigorik/bugspots/blob/4fb960eb79e5a86b95a26f604035ab68b3992d2c/lib/bugspots/scanner.rb",
+      "raw_url": "https://github.com/igrigorik/bugspots/raw/4fb960eb79e5a86b95a26f604035ab68b3992d2c/lib/bugspots/scanner.rb",
+      "contents_url": "https://api.github.com/repos/igrigorik/bugspots/contents/lib/bugspots/scanner.rb?ref=4fb960eb79e5a86b95a26f604035ab68b3992d2c",
+      "patch": "@@ -26,6 +26,7 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n     end\n \n     hotspots = Hash.new(0)\n+    currentTime = Time.now\n     fixes.each do |fix|\n       fix.files.each do |file|\n         # The timestamp used in the equation is normalized from 0 to 1, where\n@@ -34,7 +35,7 @@ def self.scan(repo, branch = \"master\", depth = 500, regex = nil)\n         # with this algorithm due to the moving normalization; it's not meant\n         # to provide some objective score, only provide a means of comparison\n         # between one file and another at any one point in time\n-        t = 1 - ((Time.now - fix.date).to_f / (Time.now - fixes.first.date))\n+        t = 1 - ((currentTime - fix.date).to_f / (currentTime - fixes.first.date))\n         hotspots[file] += 1/(1+Math.exp((-12*t)+12))\n       end\n     end"
+    }
+  ]
+}

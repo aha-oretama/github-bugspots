@@ -1,8 +1,6 @@
 "use strict";
 const CommandLine = require('../lib/CommandLine');
 const Bugspots = require('../index');
-const colors = require('colors');
-
 const param = new CommandLine(process).getParam();
 
 process.stdout.write(green(`Scanning ${param.organization}/${param.repository} repo\n`));
@@ -32,13 +30,13 @@ new Bugspots(param.organization,param.repository,param.token).analyze(param.bran
   });
 
 function red(text) {
-  return colors.red(text);
+  return `\x1b[31m${text}\x1b[0m`;
 }
 
 function green(text) {
-  return colors.green(text);
+  return `\x1b[32m${text}\x1b[0m`;
 }
 
 function yellow(text) {
-  return colors.yellow(text);
+  return `\x1b[33m${text}\x1b[0m`;
 }
