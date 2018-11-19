@@ -18,7 +18,7 @@ class Bugspots {
     let fixes = [];
     let spots = [];
 
-    let commits = await this._paginate(this.octokit.repos.getCommits, {
+    let commits = await this._paginate(this.octokit.repos.listCommits, {
       owner: this.organization,
       repo: this.repository,
       sha: branch
