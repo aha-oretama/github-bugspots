@@ -18,12 +18,14 @@ class Bugspots {
     let fixes = [];
     let spots = [];
 
-    let commits = await this._paginate(this.octokit.repos.getCommits, {
+    const options = this.octokit.repos.listCommits.endpoint.merge({
       owner: this.organization,
       repo: this.repository,
-      sha: branch
+      sha: branch,
+      per_page: 100
     });
-  
+    let commits = await this.octokit.paginate(options);
+
     for (let commit of commits) {
       if (regex.test(commit.commit.message)) {
         let detail = await this.octokit.repos.getCommit({
@@ -88,16 +90,6 @@ class Bugspots {
       fixes: fixes,
       spots: spots
     };
-  }
-  
-  async _paginate(method, param) {
-    let response = await method(Object.assign(param, {per_page: 100}));
-    let {data} = response;
-    while (this.octokit.hasNextPage(response)) {
-      response = await this.octokit.getNextPage(response);
-      data = data.concat(response.data)
-    }
-    return data
   }
 }
 
