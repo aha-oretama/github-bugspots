@@ -28,7 +28,7 @@
     "commander": "^2.15.1"
   },
   "devDependencies": {
-    "ava": "0.25.0",
+    "ava": "1.0.1",
     "nock": "10.0.4",
     "sinon": "7.2.2",
     "tap-xunit": "2.3.0"
