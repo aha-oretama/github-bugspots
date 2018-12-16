@@ -1,6 +1,6 @@
 {
   "name": "github-bugspots",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "main": "index.js",
   "bin": "./bin/cli.js",
@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "ava": "0.25.0",
-    "nock": "10.0.2",
-    "sinon": "7.1.1",
+    "nock": "10.0.4",
+    "sinon": "7.2.2",
     "tap-xunit": "2.3.0"
   }
 }
