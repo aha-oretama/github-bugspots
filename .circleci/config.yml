@@ -1,40 +1,40 @@
-version: 2
+version: 2.1
 
-defaults: &defaults
-  working_directory: ~/repo
-  docker:
-    - image: circleci/node:8
+orbs:
+  node: circleci/node@1.1.2
 
 jobs:
   test:
-    <<: *defaults  
+    working_directory: ~/repo
+    parameters:
+      tag:
+        type: string
+    executor:
+      name: node/default
+      tag: << parameters.tag >>
     steps:
       - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run:
+                name: Run tests
+                command: |
+                  mkdir -p ~/reports/ava
+                  npm run test -- --tap | npx tap-xunit > ~/reports/ava/results.xml
+            - store_test_results:
+                path: ~/reports
+            - store_artifacts:
+                path: ~/reports
+            - persist_to_workspace:
+                root: ~/repo
+                paths: .
 
-      - restore_cache:
-          keys: v1-dependencies-
-
-      - run: yarn install
-      - run:
-          name: Run tests
-          command: |
-            mkdir -p ~/reports
-            npm run test -- --tap | npx tap-xunit > ~/reports/ava.xml
-      - store_test_results:
-          path: ~/reports
-      - store_artifacts:
-          path: ~/reports
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-
-
-      - persist_to_workspace:
-          root: ~/repo
-          paths: .
   publish:
-    <<: *defaults
+    working_directory: ~/repo
+    executor:
+      name: node/default
+      tag: latest
     steps:
       - attach_workspace:
           at: ~/repo
@@ -44,12 +44,26 @@ jobs:
       - run:
           name: Publish package
           command: npm publish
-            
+
 workflows:
   version: 2
+  parameter-test:
+    jobs:
+      - test:
+          tag: "8.16"
+      - test:
+          tag: "10.16"
+      - test:
+          tag: "12.6"
   test-publish:
     jobs:
-      - test
+      - test:
+          tag: latest
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              only: master
       - publish:
           requires:
             - test
