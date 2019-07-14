@@ -62,13 +62,13 @@ workflows:
           filters:
             tags:
               only: /^v.*/
-          branches:
-            ignore: /.*/
+            branches:
+              ignore: /.*/
       - publish:
           requires:
             - test
           filters:
             tags:
               only: /^v.*/
-          branches:
-            ignore: /.*/
+            branches:
+              ignore: /.*/
