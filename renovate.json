@@ -1,6 +1,3 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "baseBranches": ["develop"]
+  "extends": ["@teppeis"]
 }
