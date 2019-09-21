@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "ava": "2.4.0",
-    "nock": "11.3.4",
+    "nock": "11.3.5",
     "sinon": "7.4.2",
     "tap-xunit": "2.4.1"
   }
