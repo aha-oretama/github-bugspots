@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^16.0.0",
-    "commander": "^2.15.1"
+    "commander": "^2.20.3"
   },
   "devDependencies": {
     "ava": "2.4.0",
