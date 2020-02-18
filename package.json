@@ -24,7 +24,7 @@
     "url": "https://github.com/aha-oretama/github-bugspots/issues"
   },
   "dependencies": {
-    "@octokit/rest": "^16.0.0",
+    "@octokit/rest": "^16.43.1",
     "commander": "^2.15.1"
   },
   "devDependencies": {
